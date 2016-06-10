@@ -1,0 +1,1 @@
+function mainSlider(){$("#main-slider").length&&$("#main-slider").bxSlider({mode:"fade",captions:!0})}mainSlider(),$(".vacancy__header").click(function(e){var i=$(this).next();i.is(":hidden")?($(".vacancy__header").removeClass("active"),$(".vacancy__content").slideUp(350),i.slideDown(350),$(this).addClass("active")):(i.slideUp(350),$(this).removeClass("active"))});
