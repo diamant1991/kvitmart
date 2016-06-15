@@ -661,6 +661,16 @@ a {
   src: url("../fonts/GothaProBol.eot");
   src: url("../fonts/GothaProBol.eot") format("embedded-opentype"), url("../fonts/GothaProBol.woff2") format("woff2"), url("../fonts/GothaProBol.woff") format("woff"), url("../fonts/GothaProBol.ttf") format("truetype"), url("../fonts/GothaProBol.svg#GothaProBol") format("svg"); }
 
+@font-face {
+  font-family: 'GothaProBla';
+  src: url("../fonts/GothaProBla.eot");
+  src: url("../fonts/GothaProBla.eot") format("embedded-opentype"), url("../fonts/GothaProBla.woff2") format("woff2"), url("../fonts/GothaProBla.woff") format("woff"), url("../fonts/GothaProBla.ttf") format("truetype"), url("../fonts/GothaProBla.svg#GothaProBla") format("svg"); }
+
+@font-face {
+  font-family: 'GothaProIta';
+  src: url("../fonts/GothaProIta.eot");
+  src: url("../fonts/GothaProIta.eot") format("embedded-opentype"), url("../fonts/GothaProIta.woff2") format("woff2"), url("../fonts/GothaProIta.woff") format("woff"), url("../fonts/GothaProIta.ttf") format("truetype"), url("../fonts/GothaProIta.svg#GothaProIta") format("svg"); }
+
 .bx-wrapper {
   position: relative;
   margin: 0 auto;
@@ -1768,7 +1778,7 @@ img {
   padding-left: 10px; }
 
 .content-text {
-  width: 75%; }
+  width: 80%; }
 
 .content-wrapp {
   background: #fff;
@@ -1779,6 +1789,8 @@ img {
     background: #fff; }
   .content-wrapp .block-header:after {
     top: 36%; }
+  .content-wrapp i {
+    font-family: "GothaProIta"; }
   .content-wrapp a {
     color: #662d91;
     text-decoration: underline; }
@@ -2268,3 +2280,148 @@ img {
     border-radius: 50%;
     text-decoration: none !important;
     background: #f2f2f2; }
+
+.title-item {
+  font-size: 23px;
+  font-weight: bold;
+  color: #662d91; }
+
+.share-block {
+  margin: 10px 0;
+  font-size: 14px; }
+
+.back-link {
+  margin-bottom: 20px; }
+  .back-link a {
+    font-size: 14px !important; }
+
+.with-border {
+  border-top: 1px solid #f2f2f2;
+  margin-top: 20px; }
+
+.about-company__procent {
+  margin-bottom: 40px; }
+  .about-company__procent .left-block {
+    float: left;
+    width: 35%;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "GothaProBol";
+    color: #662d91;
+    line-height: 1; }
+  .about-company__procent .number {
+    font-size: 100px; }
+  .about-company__procent .right-block {
+    height: 130px;
+    float: left;
+    width: 65%; }
+
+.about-company__item {
+  margin-bottom: 15px; }
+  .about-company__item .left-block {
+    float: left;
+    width: 35%; }
+  .about-company__item .right-block {
+    float: left;
+    width: 65%;
+    padding-left: 65px;
+    position: relative;
+    height: 200px;
+    font-size: 26px;
+    color: #662d91;
+    font-family: "GothaProBol";
+    text-transform: uppercase;
+    line-height: 1.2; }
+    .about-company__item .right-block:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      background: #7a7679;
+      width: 80px;
+      height: 2px;
+      left: -40px;
+      top: 50%;
+      margin-top: -1px; }
+
+.about-company h1 {
+  font-family: "GothaProBla";
+  text-transform: uppercase;
+  color: #662d91;
+  font-size: 40px; }
+
+.about-company__header {
+  line-height: 1.2; }
+  .about-company__header p {
+    padding-left: 75px; }
+
+.about-company blockquote {
+  position: relative;
+  padding: 50px 0;
+  padding-left: 170px; }
+  .about-company blockquote:before {
+    content: "";
+    background: url(../img/blockquote-icon.png) no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    margin-left: -75px;
+    opacity: 0.2;
+    width: 89px;
+    height: 67px; }
+  .about-company blockquote:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #999999; }
+
+.about-company ul li {
+  position: relative;
+  padding-left: 20px; }
+  .about-company ul li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    background: #999999; }
+
+.about-company ul:after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #999;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.with-pad {
+  padding-left: 80px; }
+
+.info-delivery__title {
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  color: #662d91;
+  font-family: "GothaProBol";
+  position: relative;
+  padding-bottom: 40px; }
+  .info-delivery__title:after {
+    content: "";
+    width: 2px;
+    display: block;
+    background: #999;
+    height: 65px;
+    position: absolute;
+    z-index: 2;
+    left: 270px;
+    margin-top: 20px; }
+  .info-delivery__title p {
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: left; }
