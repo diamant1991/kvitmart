@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>О компании</title>
+  <title>Оформление заказа</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,700' rel='stylesheet' type='text/css'>
@@ -291,131 +291,251 @@
           </li>
         </ul>
       </div>
-      <h2 class="inner-title">О компании</h2>
+      <h2 class="inner-title">
+        Оформление заказа
+      </h2>
       <div class="content clearfix">
-        <div class="col-md-2">
-          <div class="row">
-            <aside class="sidebar">
-              <ul>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#" class="active">Вакансии</a></li>
-                <li><a href="#">Сотрудничество</a></li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Помощь</a></li>
-                <li><a href="#">Обзоры</a></li>
-              </ul>
-            </aside>
+        <div class="ordering">
+          <div class="ordering__content">
+            <div class="get-order-info">
+              <form action="">
+                <div class="get-block">
+                  <div class="get-title">
+                    1. Контактные данные
+                  </div>
+                  <div class="get-content">
+                    <div class="form-block">
+                      <div class="input-block">
+                        <p>Фамилия и Имя Отчество*</p>
+                        <input type="text" class="input__item">
+                      </div>
+                      <div class="input-block clearfix">
+                        <div class="col-sm-6">
+                          <div class="left-input">
+                            <div class="row">
+                              <p>Мобильный телефон*</p>
+                              <input type="text" class="input__item">
+                              <p class="small__text">На него Вы будите получать <br> смс о состоянии заказа</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="row">
+                            <div class="right-input">
+                              <div class="post-input">
+                                <p>Электронная почта *</p>
+                                <input type="text" class="input__item">
+                                <div class="small__check">
+                                  <input type="checkbox" class="checkbox" id="email1">
+                                  <label for="email1">Получать информацию об акциях и спецпредложениях</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="get-block">
+                  <div class="get-title">
+                    2. Способ доставки
+                  </div>
+                  <div class="get-content">
+                    <div class="delivery-get">
+                      <div class="var-delivery">
+                        <div class="delivery-check">
+                          <input type="radio" class="radio" id="del1" name="delivery">
+                          <label for="del1">Доставка курьером по Москве (в пределах МКАД)</label>
+                        </div>
+                        <div class="info-del">
+                          290<span class="rub"></span>, от 2 дней <a href="#">Подробнее</a>
+                        </div>
+                        <div class="input-block">
+                          <div class="adress-del">
+                            <p>Ближайшая станция метро:</p>
+                            <div class="city">
+                              <a href="#">ст. метро Название</a>
+                            </div>
+                          </div>
+                          <div class="adress-del">
+                            <p>Адрес доставки:</p>
+                            <input type="text" class="input__item">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="var-delivery">
+                        <div class="delivery-check">
+                          <input type="radio" class="radio" id="del2" name="delivery">
+                          <label for="del2">Доставка курьером по Московской области (за пределами МКАД)</label>
+                        </div>
+                        <div class="info-del">
+                          от 300<span class="rub">c</span> полную стоимость уточняйте у менеджера <a href="#">Подробнее</a>
+                        </div>
+                      </div>
+                      <div class="var-delivery">
+                        <div class="delivery-check">
+                          <input type="radio" class="radio" id="del3" name="delivery">
+                          <label for="del3">Самовывоз из магазина</label>
+                        </div>
+                        <div class="info-del">
+                          Бесплатно <a href="#">Подробнее</a>
+                        </div>
+                        <div class="info-gps">
+                          <a href="#">
+                            <span class="middle">
+                              <img src="img/gps.png" alt="">
+                            </span>
+                            <span class="middle text">Москва, ст. метро Новослободская, ул. Селезневская 11А</span>
+                          </a>
+                        </div>
+                        
+                      </div>
+                      <div class="var-delivery">
+                        <div class="delivery-check">
+                          <input type="radio" class="radio" id="del4" name="delivery">
+                          <label for="del4">Почта России</label>
+                        </div>
+                        <div class="info-del">
+                          от 360<span class="rub">c</span>, от 2 дней <a href="#">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="get-block">
+                  <div class="get-title">
+                    3. Способ оплаты
+                  </div>
+                  <div class="get-content">
+                    <div class="delivery-get">
+                      <div class="var-delivery">
+                        <div class="delivery-check">
+                          <input type="radio" class="radio" id="pay1" name="payment">
+                          <label for="pay1">Наличными</label>
+                        </div>
+                        <div class="info-del">
+                          Наличными при получении заказа <a href="#">Подробнее</a>
+                        </div>
+                      </div>
+                      <div class="var-delivery">
+                        <div class="delivery-check">
+                          <input type="radio" class="radio" id="pay2" name="payment">
+                          <label for="pay2">Перевод с карты на карту магазина</label>
+                        </div>
+                        <div class="info-del">
+                          Сбербанк Альфа-Банк <a href="#">Подробнее</a>
+                        </div>
+                      </div>
+                      <div class="var-delivery">
+                        <div class="delivery-check">
+                          <input type="radio" class="radio" id="pay3" name="payment">
+                          <label for="pay3">Банковской картой</label>
+                        </div>
+                        <div class="info-del">
+                          VISA/MASTERCARD комиссия 5% <a href="#">Подробнее</a>
+                        </div>
+                      </div>
+                      <div class="var-delivery">
+                        <div class="delivery-check">
+                          <input type="radio" class="radio" id="pay4" name="payment">
+                          <label for="pay4">Безналичный расчет</label>
+                        </div>
+                        <div class="info-del">
+                          Для юридических лиц комиссия 5% <a href="#">Подробнее</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="textarea-block">
+                  <div class="get-content">
+                    <div class="stay-comment">Оставить комментарий к заказу</div>
+                    <div class="input-block">
+                      <textarea class="textarea__item" placeholder="Сообщение"></textarea>
+                    </div>
+                  </div>
+                  <input type="submit" value="Оформить заказ" class="save__btn">
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="col-md-10">
-          <div class="row">
-            <div class="center-content">
-              <div class="content-wrapp">
-                <div class="about-company">
-                  <header class="about-company__header">
-                    <h1>Квитмаркет</h1>
-                    <p>
-                      <i>интернет-гипермаркет мобильной электроники, интересных гаджетов и аксессуаров.</i>
-                    </p>
-                  </header>
-                  <blockquote>
-                    <p>
-                      Нет, здесь не будет большого количества хвалебного текста с громкими, ничем не подкрепленными фразами, типа: «Самая крутая команда специалистов», «Мы много лет на рынке», «Большой опыт работы», «Индивидуальный подход» и тд… 
-                    </p>
-                    <p>
-                      За много лет работы мы успели узнать ключевые проблемы клиентов, совершающих покупку мобильной электроники в интернет магазинах и сейчас мы о них расскажем!
-                    </p>
-                  </blockquote>
-                  <div class="about-company__item clearfix">
-                    <div class="left-block">
-                      <img src="img/about1.jpg" alt="">
-                    </div>
-                    <div class="right-block">
-                      <div class="table-block">
-                        <div class="block-vertical">
-                          Мы знаем <br>
-                          абсолютно все о технике <br>
-                          которую продаем! 
-                        </div>
-                      </div>
-                    </div>
-                  </div> 
-                  <p class="with-pad">Позвонив нам, Вам ответит не оператор, который в первые слышит о том или ином товаре и в процессе разговора начинает его изучать, а менеджер, который имел опыт пользования товаром, т.к. большинство товаров представленных в нашем магазине мы тестируем и снимаем на них видеообзоры - чтобы быть в курсе инноваций и должным образом консультировать наших клиентов! </p> 
-                  <div class="about-company__procent clearfix">
-                    <div class="left-block">
-                      <div class="number">200%</div>
-                      оригинальности
-                    </div>
-                    <div class="right-block">
-                      <div class="table-block">
-                        <div class="block-vertical">
-                          Никакого ширпотреба, никаких копий и использованной техники! Мы продаем исключительно оригинальную технику с заводской гарантией от производителя - в случает отсутствия официальной гарантии, мы даем гарантию сроком на 1 год в сервисном центре с которым мы сотрудничаем.
-                        </div>
-                      </div>
-                    </div>
-                  </div> 
-                  <p class="with-pad">Большая часть техники проверяется на сайте производителя на оригинальность и новизну. Товар, который поступает к вам в руки, проверяется как минимум 3 раза: </p>
-                  <ul class="with-pad">
-                    <li>1й - при приеме товара на наш склад.</li>
-                    <li>2й - при приеме товара в магазин.</li>
-                    <li>3й - при приеме товара клиентом при доставке или самовывозе.</li>
-                  </ul>
-                  <div class="info-delivery">
-                    <div class="info-delivery__title">
-                      <p>Доставка того чего нужно, <br>туда куда нужно!!!</p>
-                    </div>
-                    <div class="info-delivery__img">
-                      <img src="img/about2.jpg" alt="">
-                    </div>
-                    <div class="info-delivery__quote">
-                      «Извините - служба логистики не справляется», «Курьер перепутал дом», «Адрес не правильно записали», «Много заказов» «Курьеру на складе не тот товар дали» 
-                    </div>
-                    <div class="info-delivery__text">
-                      За все время работы, нами ни разу не было произнесено ни одно из вышеперечисленных фраз. Жесткий контроль приема заказов и службы доставки. Всегда, абсолютно всегда курьер знает что и куда везти. Товар должен быть доставлен в назначенный промежуток времени по назначенному адресу и никак по другому.
-                    </div>
-                  </div>
-                  <div class="info-company">
-                    <div class="info-company__title">
-                      Товар привезли, <br>быстро рассчитались и убежали…
-                    </div>
-                    <div class="info-company__text">
-                      <p>
-                        Не в нашем случае! Мы не пользуемся услугами курьерских служб - все курьеры являются сотрудниками нашего магазина, по этому они полностью проинформированы о том как должна осуществляться доставка и какое внимание должно быть уделено каждому из наших клиентов. При необходимости, они смогут осуществить проверку и настройку устройств, смогут прекрасно произвести поклейку пленок и стекол. 
-                      </p>
-                      <p>
-                        Так же, под каждый конкретный заказ, курьерам выдается ряд аксессуаров с учетом выбранного устройства и предпочтений клиента, а именно: защитные стекла, чехлы, зарядные устройства, аккумуляторы и множество других интересных мелочей.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="responsibility clearfix">
-                    <div class="left-block">
-                      <img src="img/about3.jpg" alt="">
-                    </div>
-                    <div class="right-block">
-                      <div class="info-company__title">
-                        Ответственность
-                      </div>
-                      <p>
-                        Мы прекрасно понимаем, что большинство людей не доверяет покупкам в интернете - наш магазин, в отличии от многих «Гипермаркет-шаманов», существует физически, куда вы можете приехать за покупками, консультацией по тому или иному товару, настройкой устройств или просто заглянуть на чай!)
-                      </p>
-                    </div>
-                  </div>
-                  <div class="ps">
-                    <p>
-                      Нам всю жизнь твердили - «Будешь себя хорошо вести - получишь еще одну шоколадку» - мы руководствуемся именно этим принципом в нашей работе и понимаем, что выбор магазина при вашей следующей покупке будет зависеть исключительно от качества продаваемых нами товаров, предоставленных услуг и отношения к вам - по этому мы прикладываем максимальные усилия, чтобы не разочаровывать наших клиентов!
-                    </p>
-                    <p>
-                      Если одно из вышеперечисленных условий не было соблюдено одним из наших сотрудников - с нас бесплатная доставка + самая максимальная скидка на приобретаемый Вами товар!
-                    </p>
-                  </div>
+
+        <div class="my-order">
+          <div class="my-order-title">Ваш заказ</div>
+          <div class="my-order-info">
+            В корзине <a href="#">2 товара</a> на сумму 24590 руб.
+          </div>
+          <div class="order-basket-block">
+            <div class="order-img">
+              <div class="table-block">
+                <div class="block-vertical">
+                  <a href="#">
+                    <img src="img/order-img.jpg" alt="">
+                  </a>
                 </div>
               </div>
             </div>
+            <div class="order-desc">
+              <div class="text">
+                <p>Корпус для Sony Xperia C ORIGINAL с боковыми клавишами</p>
+              </div>
+              <div class="price">
+                <p>25 790.-</p>
+              </div>
+              <div class="info-item">
+                <p><span class="grey">Код товара:</span> АВ5454</p>
+              </div>
+            </div>
+          </div>
+          <div class="order-basket-block">
+            <div class="order-img">
+              <div class="table-block">
+                <div class="block-vertical">
+                  <a href="#">
+                    <img src="img/order-img.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="order-desc">
+              <div class="text">
+                <p>Корпус для Sony Xperia C ORIGINAL с боковыми клавишами</p>
+              </div>
+              <div class="price">
+                <p>25 790.-</p>
+              </div>
+              <div class="info-item">
+                <p><span class="grey">Код товара:</span> АВ5454</p>
+              </div>
+            </div>
+          </div>
+          <div class="order-basket-block">
+            <div class="order-img">
+              <div class="table-block">
+                <div class="block-vertical">
+                  <a href="#">
+                    <img src="img/order-img.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="order-desc">
+              <div class="text">
+                <p>Корпус для Sony Xperia C ORIGINAL с боковыми клавишами</p>
+              </div>
+              <div class="price">
+                <p>25 790.-</p>
+              </div>
+              <div class="info-item">
+                <p><span class="grey">Код товара:</span> АВ5454</p>
+              </div>
+            </div>
+          </div>
+          <div class="after-order">
+            <span class="title">Итого:</span> <span class="price">194 790.-</span>  с учетом доставки 290 <span class="rub">c</span> <br>
+            (Доставка бесплатно при заказе от 290 000 <span class="rub">c</span>)
           </div>
         </div>
       </div>
@@ -583,7 +703,8 @@
       </div>
     </div>
   </footer>
-  
+
+
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

@@ -671,6 +671,11 @@ a {
   src: url("../fonts/GothaProIta.eot");
   src: url("../fonts/GothaProIta.eot") format("embedded-opentype"), url("../fonts/GothaProIta.woff2") format("woff2"), url("../fonts/GothaProIta.woff") format("woff"), url("../fonts/GothaProIta.ttf") format("truetype"), url("../fonts/GothaProIta.svg#GothaProIta") format("svg"); }
 
+@font-face {
+  font-family: 'rouble';
+  src: url("../fonts/rouble.eot");
+  src: url("../fonts/rouble.eot") format("embedded-opentype"), url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype"), url("../fonts/rouble.svg#rouble") format("svg"); }
+
 .bx-wrapper {
   position: relative;
   margin: 0 auto;
@@ -1489,6 +1494,12 @@ img {
 .block-header {
   position: relative;
   margin-bottom: 30px; }
+  .block-header.non-mrg {
+    margin-bottom: 0; }
+    .block-header.non-mrg:after {
+      top: 46% !important; }
+    .block-header.non-mrg .block-title {
+      margin-bottom: 10px; }
   .block-header:after {
     content: "";
     display: block;
@@ -1742,7 +1753,25 @@ img {
   padding-left: 30px;
   font-size: 28px;
   font-family: "GothaProBol";
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  position: relative; }
+
+.get-order-link {
+  position: absolute;
+  z-index: 2;
+  font-size: 14px;
+  color: #fff;
+  width: 160px;
+  height: 35px;
+  background-color: #662d91;
+  display: block;
+  line-height: 35px;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", Tahoma, sans-serif;
+  right: 20px;
+  top: 50%;
+  margin-top: -17.5px; }
 
 .sidebar {
   background: #fff; }
@@ -1990,7 +2019,7 @@ img {
         padding: 5px 0;
         padding-left: 30px; }
     .delivery table tbody td {
-      height: 40px;
+      padding: 15px 0;
       padding-left: 30px;
       font-size: 14px;
       border-bottom: 1px solid #eaeaea; }
@@ -2235,7 +2264,8 @@ img {
 
 .pagination {
   text-align: center;
-  padding: 40px 0; }
+  padding: 40px 0;
+  position: relative; }
 
 .prev-page {
   float: left;
@@ -2244,6 +2274,9 @@ img {
   color: #333 !important;
   text-decoration: none !important;
   line-height: 1; }
+  .prev-page.disabled {
+    opacity: 0.3;
+    cursor: default; }
   .prev-page span {
     margin: 0 2px; }
 
@@ -2425,3 +2458,398 @@ img {
     margin-bottom: 0;
     display: inline-block;
     text-align: left; }
+
+.info-delivery__quote {
+  color: #858585;
+  font-size: 16px;
+  padding: 30px 0;
+  padding-left: 80px;
+  position: relative; }
+  .info-delivery__quote:before {
+    content: "";
+    background: url(../img/blockquote-icon.png) no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    opacity: 0.2;
+    width: 89px;
+    height: 67px; }
+
+.info-delivery__text {
+  padding-left: 220px;
+  margin-bottom: 80px; }
+
+.info-company {
+  padding-left: 80px;
+  margin-bottom: 50px; }
+  .info-company__title {
+    font-family: "GothaProBol";
+    font-size: 26px;
+    color: #662d91;
+    text-transform: uppercase;
+    line-height: 1.2; }
+    .info-company__title:after {
+      content: "";
+      display: block;
+      width: 110px;
+      height: 1px;
+      background: #333;
+      margin: 25px 0; }
+  .info-company__text {
+    position: relative; }
+    .info-company__text:before {
+      content: "";
+      display: block;
+      width: 89px;
+      height: 136px;
+      background: url(../img/ques.png) no-repeat;
+      position: absolute;
+      right: 270px;
+      top: -140px;
+      opacity: 0.4; }
+
+.responsibility .left-block {
+  float: left;
+  width: 25%;
+  margin-bottom: 100px; }
+
+.responsibility .right-block {
+  float: left;
+  width: 75%;
+  padding-top: 30px;
+  padding-left: 40px; }
+
+.responsibility .info-company__title:after {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 1px;
+  background: #333;
+  margin: 25px 0;
+  position: relative;
+  left: -80px; }
+
+.ps {
+  padding-left: 80px;
+  position: relative; }
+  .ps:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 177px;
+    height: 62px;
+    top: -40px;
+    background: url(../img/ps.png) no-repeat;
+    opacity: 0.4; }
+
+.inner-payment-item {
+  padding-left: 75px;
+  text-align: left;
+  position: relative;
+  min-height: 35px;
+  font-size: 14px;
+  margin-bottom: 25px; }
+
+.inner-payment-icon {
+  position: absolute;
+  z-index: 2;
+  left: 25px;
+  top: 2px; }
+
+.info-list {
+  margin-bottom: 40px;
+  margin-top: 10px; }
+
+.table-text {
+  position: relative;
+  padding-left: 15px; }
+  .table-text .number {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0; }
+
+.inner-review {
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 1.2;
+  margin-bottom: 25px; }
+  .inner-review .review__date {
+    margin-bottom: 10px; }
+
+.all-review-link {
+  position: absolute;
+  z-index: 2;
+  right: -170px;
+  top: 50px;
+  font-size: 14px;
+  text-decoration: none !important; }
+
+.ordering {
+  float: left;
+  width: 65%;
+  padding-right: 10px; }
+  .ordering__content {
+    background-color: #fff;
+    padding: 15px 30px; }
+
+.my-order {
+  float: left;
+  width: 35%;
+  background-color: #fff;
+  padding: 20px 15px; }
+
+.get-title {
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e6e6e6;
+  margin-bottom: 15px; }
+
+.input-block {
+  padding-right: 30px;
+  margin-bottom: 15px; }
+  .input-block p {
+    color: #666666;
+    font-size: 13px;
+    padding-left: 10px;
+    margin-bottom: 5px; }
+
+.input__item {
+  width: 100%;
+  display: block;
+  height: 35px;
+  outline: 0;
+  padding-left: 15px;
+  border: 1px solid #e2e2e2;
+  font-size: 16px;
+  color: #333; }
+
+.left-input {
+  padding-right: 15px; }
+
+.right-input {
+  padding-left: 15px; }
+
+.small__text {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #a1a1a1;
+  line-height: 1.2; }
+
+.small__check {
+  margin-top: 5px;
+  padding-left: 10px; }
+  .small__check .checkbox + label {
+    font-size: 13px;
+    color: #858585;
+    display: block; }
+
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 15px;
+  height: 15px; }
+  .checkbox + label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    color: #333; }
+  .checkbox:not(checked) {
+    position: absolute;
+    opacity: 0; }
+    .checkbox:not(checked) + label {
+      position: relative;
+      padding: 0 0 0 22px; }
+      .checkbox:not(checked) + label:before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        background: url(../img/checkbox.png) no-repeat; }
+  .checkbox:checked + label:before {
+    background: url(../img/checkbox-active.png) no-repeat; }
+
+.radio {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 15px;
+  height: 15px; }
+  .radio + label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 16px;
+    color: #333; }
+  .radio:not(checked) {
+    position: absolute;
+    opacity: 0; }
+    .radio:not(checked) + label {
+      position: relative;
+      padding: 0 0 0 22px; }
+      .radio:not(checked) + label:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        background: url(../img/checkbox.png) no-repeat; }
+  .radio:checked + label:before {
+    background: url(../img/checkbox-active.png) no-repeat; }
+
+.info-del {
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #858585;
+  padding-left: 20px; }
+  .info-del a {
+    color: #3a5795;
+    text-decoration: underline; }
+
+.adress-del {
+  padding-left: 20px; }
+
+.city {
+  margin-bottom: 10px; }
+  .city a {
+    width: 100%;
+    display: block;
+    height: 35px;
+    outline: 0;
+    padding-left: 15px;
+    border: 1px solid #e2e2e2;
+    font-size: 16px;
+    color: #333;
+    line-height: 33px;
+    background: url(../img/drop-arrow.png) no-repeat 97%; }
+
+.var-delivery {
+  margin-bottom: 15px; }
+
+.textarea__item {
+  display: block;
+  width: 100%;
+  height: 115px;
+  resize: none;
+  outline: 0;
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 16px;
+  color: #333;
+  font-family: "Roboto", Tahoma, sans-serif;
+  border: 2px solid #ededed; }
+
+.stay-comment {
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+.textarea-block {
+  padding-top: 20px;
+  padding-left: 10px;
+  border-top: 2px solid #e6e6e6;
+  margin-top: 20px; }
+
+.save__btn {
+  display: block;
+  width: 225px;
+  height: 40px;
+  background-color: #662d91;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px; }
+
+.my-order-title {
+  font-size: 22px;
+  font-family: "GothaProBol";
+  margin-bottom: 15px; }
+
+.my-order-info {
+  font-size: 13px;
+  color: #858585;
+  margin-bottom: 15px; }
+  .my-order-info a {
+    color: #3a5795;
+    text-decoration: underline; }
+
+.order-basket-block {
+  position: relative;
+  padding-left: 120px;
+  height: 115px;
+  border: 2px solid #eaeaea;
+  margin-bottom: 10px; }
+  .order-basket-block .order-img {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 115px;
+    text-align: center; }
+
+.order-desc {
+  padding-top: 10px; }
+  .order-desc .text {
+    font-size: 14px; }
+  .order-desc .price {
+    font-family: 'Impact',sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    margin: 5px 0; }
+  .order-desc .info-item {
+    font-size: 13px; }
+
+.after-order {
+  font-size: 12px;
+  color: #4d4d4d;
+  padding-left: 20px;
+  line-height: 1.4; }
+  .after-order .title {
+    font-size: 19px;
+    font-weight: bold; }
+  .after-order .price {
+    font-family: 'Impact',sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    padding: 0 5px;
+    padding-right: 10px;
+    color: #333; }
+
+.rub {
+  font-family: 'rouble';
+  font-weight: normal; }
+
+.info-gps {
+  padding-left: 20px; }
+  .info-gps .text {
+    border-bottom: 1px dashed #662d91; }
+
+.collection__item {
+  height: 300px;
+  color: #fff;
+  text-align: center; }
+
+.collection__title {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 15px; }
+
+.collection__text {
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.3; }
+
+.collection__share_title {
+  margin-bottom: 10px; }
