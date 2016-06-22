@@ -296,13 +296,13 @@
         <div class="content-wrapp">
           <ul class="nav-tab nav-tab_cabinet clearfix">
             <li>
-              <a href="#">Мой профиль</a>
+              <a href="#" class="active" onclick="tab(profile,'#profile'); return false;">Мой профиль</a>
             </li>
             <li>
-              <a href="#" class="active">История заказов</a>
+              <a href="#" onclick="tab(profile,'#history-orders'); return false;">История заказов</a>
             </li>
           </ul>
-          <div class="status-table">
+          <div class="status-table" id="history-orders">
               <div class="status-table-block">
                 <table>
                   <thead>
@@ -710,6 +710,184 @@
                     </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+          <div class="profile" id="profile">
+            <div class="profile__content">
+              <div class="form-block">
+                <div class="profile__title">1.Персональные данные</div>
+                <div class="profile__form">
+                  <form action="">
+                    <div class="input-block">
+                      <p>Фамилия и Имя Отчество*</p>
+                      <input type="text" class="input__item">
+                    </div>
+                    <div class="input-block clearfix">
+                      <div class="col-sm-6">
+                        <div class="left-input">
+                          <div class="row">
+                            <p>Мобильный телефон*</p>
+                            <input type="text" class="input__item">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="right-input">
+                            <div class="post-input">
+                              <p>Электронная почта *</p>
+                              <input type="text" class="input__item">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-block clearfix">
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="left-input">
+                            <div class="post-input">
+                              <p>Пароль</p>
+                              <input type="password" class="input__item">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="right-input">
+                            <div class="post-input">
+                              <p>Пароль еще раз</p>
+                              <input type="password" class="input__item">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-block clearfix">
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="left-input">
+                            <input type="submit" value="Сохранить" class="profile-save">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- form block -->
+              <div class="form-block">
+                <div class="profile__title">2. Адрес доставки</div>
+                <div class="profile__form">
+                  <form action="">
+                    <div class="input-block clearfix">
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="left-input">
+                            <p>Город</p>
+                            <input type="text" class="input__item" value="Оренбург">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-block clearfix">
+                      <div class="col-sm-6">
+                        <div class="left-input">
+                          <div class="row">
+                            <p>Улица</p>
+                            <input type="text" class="input__item">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="right-input">
+                            <div class="post-input">
+                              <p>Дом/строение</p>
+                              <input type="text" class="input__item">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-block clearfix">
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="left-input">
+                            <div class="post-input">
+                              <p>Корпус</p>
+                              <input type="text" class="input__item">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="right-input">
+                            <div class="post-input">
+                              <p>Квартира/офис</p>
+                              <input type="password" class="input__item">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-block clearfix">
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="left-input">
+                            <input type="submit" value="Сохранить" class="profile-save">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="right-input">
+                            <a href="#" class="add-adress">
+                              + добавить адрес
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+               <!-- form block -->
+               <div class="form-block">
+                 <div class="profile__title">3. Мои рассылки</div>
+                 <div class="profile__info">
+                   Вы можете подписаться на следующие виды рассылок нашего магазина для получения новостей про акции и промокоды:
+                 </div>
+                 <div class="profile__form">
+                   <form action="">
+                    <div class="profile__check">
+                      <div class="profile__check_title">Email рассылки</div>
+                      <ul>
+                        <li>
+                          <input type="checkbox" class="checkbox" id="email1">
+                          <label for="email1">Apple</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="checkbox" id="email2">
+                          <label for="email2">Новинки и тренды</label>
+                        </li>
+                      </ul>
+                     </div>
+                     <div class="profile__check no-border">
+                      <div class="profile__check_title">SMS рассылки</div>
+                      <ul>
+                        <li>
+                          <input type="checkbox" class="checkbox" id="sms1">
+                          <label for="sms1">Скидки и акции</label>
+                        </li>
+                      </ul>
+                     </div>
+                     <input type="submit" value="Сохранить" class="profile-save">
+                   </form>
+                 </div>
+               </div>
             </div>
           </div>
         </div>
