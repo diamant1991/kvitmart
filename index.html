@@ -33,7 +33,16 @@
               </div>
             </div>
           </div>
-          <nav class="nav">
+          <div class="mobile-compare visible-xs">
+            <div class="table-block">
+              <div class="block-vertical">
+                <a href="#">
+                  <img src="img/compare.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav class="nav hidden-xs">
             <ul class="clearfix">
               <li><a href="#">О нас</a></li>
               <li><a href="#">Доставка</a></li>
@@ -56,11 +65,11 @@
                 <span class="enter__icon middle">
                   <img src="img/enter.png" alt="">
                 </span>
-                <a href="#" class="middle">
+                <a href="#" class="middle hidden-xs">
                   Войти
                 </a>
-                <span class="enter__delimiter middle">/</span>
-                <a href="#" class="middle">
+                <span class="enter__delimiter middle hidden-xs">/</span>
+                <a href="#" class="middle hidden-xs">
                   Регистрация
                 </a>
               </div>
@@ -68,20 +77,27 @@
           </div>
         </div><!-- top panel -->
         <div class="header__info">
+          <div class="toggle-menu visible-xs">
+            <div class="burger-icon"></div>
+          </div>
           <div class="logo">
             <div class="table-block">
               <div class="block-vertical">
                 <a href="#" class="logo__link middle">
-                  <img src="img/logo.png" alt="">
+                  <img class="hidden-xs" src="img/logo.png" alt="">
+                  <img class="visible-xs" src="img/mobile-logo.png" alt="">
                 </a>
-                <span class="logo__text middle">
+                <span class="logo__text middle hidden-xs">
                   Интернет гипермаркет<br> 
                   электроники
+                </span>
+                <span class="logo__text visible-xs">
+                  Интернет гипермаркет электроники
                 </span>
               </div>
             </div>
           </div>
-          <div class="header__tel">
+          <div class="header__tel hidden-xs">
             <div class="table-block">
               <div class="block-vertical">
                 <div class="tel-item">
@@ -101,7 +117,7 @@
               </div>
             </div>
           </div>
-          <div class="header__time">
+          <div class="header__time hidden-xs">
             <div class="table-block">
               <div class="block-vertical">
                 <div class="time-info">
@@ -114,6 +130,7 @@
               </div>
             </div>
           </div>
+          <div class="mobile-search visible-xs"></div>
           <div class="header__basket">
             <div class="table-block">
               <div class="block-vertical">
@@ -122,11 +139,11 @@
                     <span class="middle">
                       <img src="img/basket.png" alt="">
                     </span>
-                    <span class="basket-name middle">
+                    <span class="basket-name middle hidden-xs">
                       Корзина
                     </span>
                   </div>
-                  <div class="basket-info">
+                  <div class="basket-info hidden-xs">
                     В корзине: нет товаров
                   </div>
                 </a>
@@ -134,7 +151,40 @@
             </div>
           </div>
         </div><!-- header info -->
-        <div class="catalog-menu clearfix">
+        <div class="mobile-nav visible-xs" id="mobile-nav">
+          <div class="mobile-nav__title">Каталог товаров</div>
+          <ul>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Мобильные телефоны</a></li>
+            <li><a href="#">Планшеты</a></li>
+            <li><a href="#">Аудио/видео</a></li>
+            <li><a href="#">Для авто</a></li>
+            <li><a href="#">Гаджеты</a></li>
+            <li><a href="#">Чехлы</a></li>
+            <li><a href="#">Аксессуары</a></li>
+          </ul>
+          <div class="mobile-nav__title">Магазин</div>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="mobile-telephone visible-xs clearfix">
+          <div class="col-xs-6">
+            <div class="mobile-telephone__text">8 (800) 123-5656</div>
+            <a href="#" class="get-call">
+              Обратный звонок
+            </a>
+          </div>
+          <div class="col-xs-6">
+            <div class="mobile-telephone__text">8 (800) 123-5656</div>
+            <span class="grey">c 9:00 до 22:00</span>
+          </div>
+        </div>
+        <div class="catalog-menu hidden-xs clearfix">
           <ul class="clearfix">
             <li>
               <a href="#" class="catalog-link">
@@ -297,7 +347,7 @@
       </div>
       <!-- main slider -->
       <div class="advantages item-block clearfix">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-xs-6">
           <div class="row">
             <div class="advantages__item">
               <div class="table-block">
@@ -313,7 +363,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-xs-6">
           <div class="row">
             <div class="advantages__item">
               <div class="table-block">
@@ -329,7 +379,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-xs-6">
           <div class="row">
             <div class="advantages__item">
               <div class="table-block">
@@ -345,7 +395,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3 col-xs-6">
           <div class="row">
             <div class="advantages__item">
               <div class="table-block">
@@ -364,7 +414,7 @@
       </div>
       <!-- advantages -->
       <div class="selection clearfix">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="row">
             <a href="#">
               <div class="selection__item">
@@ -383,7 +433,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="row">
             <a href="#">
               <div class="selection__item">
@@ -402,7 +452,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="row">
             <a href="#">
               <div class="selection__item">
@@ -421,7 +471,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="row">
             <a href="#">
               <div class="selection__item">
@@ -440,7 +490,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="row">
             <a href="#">
               <div class="selection__item">
@@ -459,7 +509,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="row">
             <a href="#">
               <div class="selection__item">
@@ -483,7 +533,60 @@
       <div class="hits">
         <header class="hits__header clearfix">
           <h2 class="block-title">Топ товаров</h2>
-          <ul class="nav-tab nav-tab_hits clearfix">
+          <div class="tab-select visible">
+            <div class="select">
+              <a href="javascript:void(0);" class="slct">
+                <span class="slct__text">
+                  Мобильные телефоны
+                </span>
+                <span class="slct__number">(24)</span>
+              </a>
+              <ul class="drop">
+                <li>
+                  <span class="slct__text">
+                  Мобильные телефоны
+                </span>
+                <span class="slct__number">(24)</span>
+                </li>
+                <li>
+                  <span class="slct__text">
+                    Гаджеты
+                  </span>
+                  <span class="slct__number">(24)</span>
+                </li>
+                <li>
+                  <span class="slct__text">Для авто</span>
+                  <span class="slct__number">(2)</span>
+                </li>
+                <li>
+                  <span class="slct__text">Планшеты</span>
+                  <span class="slct__number">(2)</span>
+                </li>
+                <li>
+                  <span class="slct__text">Аpple</span>
+                  <span class="slct__number">(2)</span>
+                </li>
+                <li>
+                  <span class="slct__text">Аксессуары</span>
+                  <span class="slct__number">(2)</span>
+                </li>
+                <li>
+                  <span class="slct__text">Чехлы</span>
+                  <span class="slct__number">(2)</span>
+                </li>
+                <li>
+                  <span class="slct__text">Аудио/Видео</span>
+                  <span class="slct__number">(2)</span>
+                </li>
+                <li>
+                  <span class="slct__text">Все товары</span>
+                  <span class="slct__number">(2)</span>
+                </li>
+              </ul>
+              <input type="hidden" id="select">
+            </div>
+          </div>
+          <ul class="nav-tab nav-tab_hits clearfix hidden-xs">
             <li>
               <a href="#" class="active">Мобильные телефоны</a>
             </li>
@@ -517,7 +620,7 @@
           <div id="telephone">
             <div class="hits__carousel">
               <div class="owl-carousel owl-theme">
-                <div class="item" style="width: 210px;">
+                <div class="item">
                   <div class="hits__item">
                     <div class="hits__title">
                       Apple iPhone 6 Plus 128GB Space Gray
@@ -550,7 +653,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item" style="width: 210px;">
+                <div class="item">
                   <div class="hits__item">
                     <div class="hits__title">
                       Apple iPhone 6 Plus 128GB Space Gray
@@ -583,7 +686,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item" style="width: 210px;">
+                <div class="item">
                   <div class="hits__item">
                     <div class="hits__title">
                       Apple iPhone 6 Plus 128GB Space Gray
@@ -616,7 +719,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item" style="width: 210px;">
+                <div class="item">
                   <div class="hits__item">
                     <div class="hits__title">
                       Apple iPhone 6 Plus 128GB Space Gray
@@ -649,7 +752,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item" style="width: 210px;">
+                <div class="item">
                   <div class="hits__item">
                     <div class="hits__title">
                       Apple iPhone 6 Plus 128GB Space Gray
@@ -682,7 +785,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item" style="width: 210px;">
+                <div class="item">
                   <div class="hits__item">
                     <div class="hits__title">
                       Apple iPhone 6 Plus 128GB Space Gray
@@ -715,7 +818,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item" style="width: 210px;">
+                <div class="item">
                   <div class="hits__item">
                     <div class="hits__title">
                       Apple iPhone 6 Plus 128GB Space Gray
@@ -748,7 +851,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item" style="width: 210px;">
+                <div class="item">
                   <div class="hits__item">
                     <div class="hits__title">
                       Apple iPhone 6 Plus 128GB Space Gray
@@ -795,7 +898,7 @@
           </a>
         </header>
         <div class="review__content clearfix">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="row">
               <div class="review__item">
                 <div class="review__top">
@@ -813,7 +916,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="row">
               <div class="review__item">
                 <div class="review__top">
@@ -831,7 +934,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="row">
               <div class="review__item">
                 <div class="review__top">
@@ -849,7 +952,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="row">
               <div class="review__item">
                 <div class="review__top">
@@ -871,7 +974,7 @@
       </div>
       <!-- review -->
       <div class="friends-news clearfix">
-        <div class="col-md-6">
+        <div class="col-md-6 hidden-sm">
           <div class="row">
             <div class="friends-news-item">
               <header class="block-header">
@@ -904,48 +1007,63 @@
               </header>
               <div class="last-news">
                 <div class="last-news__item">
-                  <a href="#">
+                  <a href="#" class="hidden-xs">
                     <div class="last-news__img bg-block" style="background-image: url(img/review.jpg)"></div>
                   </a>
                   <div class="last-news__descr">
-                    <div class="date-block">
-                      17 сентября 2015
+                    <div class="last-news__header clearfix">
+                      <a href="#" class="visible-xs">
+                        <div class="last-news__img bg-block" style="background-image: url(img/review.jpg)"></div>
+                      </a>
+                      <div class="date-block">
+                        17 сентября 2015
+                      </div>
+                      <a href="#" class="last-news__name">
+                        Заголовок новости
+                      </a>
                     </div>
-                    <a href="#" class="last-news__name">
-                      Заголовок новости
-                    </a>
                     <p>
                       Полный контроль над безграничным миром музыки. <br> Простой дизайн приложения SongPal позволяет интуитивно управлять воспроизведением музыки. Просто установите его на телефон и получите полный контроль над музыкой.
                     </p>
                   </div>
                 </div>
                 <div class="last-news__item">
-                  <a href="#">
+                  <a href="#" class="hidden-xs">
                     <div class="last-news__img bg-block" style="background-image: url(img/review.jpg)"></div>
                   </a>
                   <div class="last-news__descr">
-                    <div class="date-block">
-                      17 сентября 2015
+                    <div class="last-news__header clearfix">
+                      <a href="#" class="visible-xs">
+                        <div class="last-news__img bg-block" style="background-image: url(img/review.jpg)"></div>
+                      </a>
+                      <div class="date-block">
+                        17 сентября 2015
+                      </div>
+                      <a href="#" class="last-news__name">
+                        Заголовок новости
+                      </a>
                     </div>
-                    <a href="#" class="last-news__name">
-                      Заголовок новости
-                    </a>
                     <p>
                       Полный контроль над безграничным миром музыки. <br> Простой дизайн приложения SongPal позволяет интуитивно управлять воспроизведением музыки. Просто установите его на телефон и получите полный контроль над музыкой.
                     </p>
                   </div>
                 </div>
                 <div class="last-news__item">
-                  <a href="#">
+                  <a href="#" class="hidden-xs">
                     <div class="last-news__img bg-block" style="background-image: url(img/review.jpg)"></div>
                   </a>
                   <div class="last-news__descr">
-                    <div class="date-block">
-                      17 сентября 2015
+                    <div class="last-news__header clearfix">
+                      <a href="#" class="visible-xs">
+                        <div class="last-news__img bg-block" style="background-image: url(img/review.jpg)"></div>
+                      </a>
+                      <div class="date-block">
+                        17 сентября 2015
+                      </div>
+                      <a href="#" class="last-news__name">
+                        Заголовок новости
+                      </a>
                     </div>
-                    <a href="#" class="last-news__name">
-                      Заголовок новости
-                    </a>
                     <p>
                       Полный контроль над безграничным миром музыки. <br> Простой дизайн приложения SongPal позволяет интуитивно управлять воспроизведением музыки. Просто установите его на телефон и получите полный контроль над музыкой.
                     </p>
@@ -960,7 +1078,7 @@
       <div class="interesting">
         <header class="block-header clearfix">
           <h3 class="block-title middle">Самое интересное здесь</h3>
-          <a href="#" class="all-review middle">
+          <a href="#" class="all-review middle hidden-xs">
             <span>Смотреть все</span>
           </a>
         </header>
@@ -993,11 +1111,43 @@
           <div class="footer__email">
             Е-mail: info@istore-apple.ru
           </div>
-          <div class="copyright">
+          <div class="copyright hidden-xs">
             © 1900-2016 ООО «Название» <br>Все цены указаны в рублях.
           </div>
         </div>
-        <div class="site-map">
+        <ul class="footer-nav visible-xs">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Оплата</a>
+          </li>
+          <li>
+            <a href="#">Гарантии</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Еще</a>
+            <ul>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="yandex-link visible-xs">
+          <a href="#">
+            <img src="img/yandex-link.png" alt="">
+          </a>
+        </div>
+        <div class="site-map hidden-xs">
           <h4 class="footer__title">
             Карта сайта
           </h4>
@@ -1021,7 +1171,7 @@
             </a>
           </div>
         </div>
-        <div class="footer__info">
+        <div class="footer__info hidden-xs">
           <h4 class="footer__title">
             Информация
           </h4>
@@ -1130,6 +1280,14 @@
               </div>
             </a>
           </div>
+          <div class="copyright visible-xs clearfix">
+            <div class="pull-left">
+              © 1900-2016 ООО «Название» <br>Все цены указаны в рублях
+            </div>
+            <div class="pull-right">
+              <img src="img/counter.jpg" alt="">
+            </div>
+          </div>  
           <div class="create-block">
             <span class="middle">Разработано в студии</span> 
             <a href="#" class="middle">
@@ -1151,16 +1309,50 @@
       nav:true,
       responsive:{
           0:{
-              items:1
+              items:2,
+              dots: false
           },
           600:{
               items:3
           },
           1000:{
+              items:4
+          },
+          1200:{
+              items:5
+          },
+          1350:{
               items:6
           }
       }
     })
+    if(window.matchMedia('(max-width: 767px)').matches){
+      $('.review__content').addClass('owl-carousel owl-theme')
+      $('.last-news').addClass('owl-carousel owl-theme')
+      $('.review__content').owlCarousel({
+        loop: true,
+        margin:5,
+        nav:true,
+        items: 1
+      })
+      $('.last-news').owlCarousel({
+        loop: true,
+        margin:5,
+        nav:true,
+        items: 1
+      })
+    }
+    $(window).resize(function() {
+        windowWidth = $(this).width();
+        if ( windowWidth < 767) {
+          location.reload()
+        }
+        else{
+          location.reload()
+        }
+    });
+
+
   </script>
 </body>
 </html>

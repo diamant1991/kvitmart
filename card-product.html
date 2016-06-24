@@ -33,7 +33,16 @@
               </div>
             </div>
           </div>
-          <nav class="nav">
+          <div class="mobile-compare visible-xs">
+            <div class="table-block">
+              <div class="block-vertical">
+                <a href="#">
+                  <img src="img/compare.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav class="nav hidden-xs">
             <ul class="clearfix">
               <li><a href="#">О нас</a></li>
               <li><a href="#">Доставка</a></li>
@@ -56,11 +65,11 @@
                 <span class="enter__icon middle">
                   <img src="img/enter.png" alt="">
                 </span>
-                <a href="#" class="middle">
+                <a href="#" class="middle hidden-xs">
                   Войти
                 </a>
-                <span class="enter__delimiter middle">/</span>
-                <a href="#" class="middle">
+                <span class="enter__delimiter middle hidden-xs">/</span>
+                <a href="#" class="middle hidden-xs">
                   Регистрация
                 </a>
               </div>
@@ -68,20 +77,27 @@
           </div>
         </div><!-- top panel -->
         <div class="header__info">
+          <div class="toggle-menu visible-xs">
+            <div class="burger-icon"></div>
+          </div>
           <div class="logo">
             <div class="table-block">
               <div class="block-vertical">
                 <a href="#" class="logo__link middle">
-                  <img src="img/logo.png" alt="">
+                  <img class="hidden-xs" src="img/logo.png" alt="">
+                  <img class="visible-xs" src="img/mobile-logo.png" alt="">
                 </a>
-                <span class="logo__text middle">
+                <span class="logo__text middle hidden-xs">
                   Интернет гипермаркет<br> 
                   электроники
+                </span>
+                <span class="logo__text visible-xs">
+                  Интернет гипермаркет электроники
                 </span>
               </div>
             </div>
           </div>
-          <div class="header__tel">
+          <div class="header__tel hidden-xs">
             <div class="table-block">
               <div class="block-vertical">
                 <div class="tel-item">
@@ -101,7 +117,7 @@
               </div>
             </div>
           </div>
-          <div class="header__time">
+          <div class="header__time hidden-xs">
             <div class="table-block">
               <div class="block-vertical">
                 <div class="time-info">
@@ -114,6 +130,7 @@
               </div>
             </div>
           </div>
+          <div class="mobile-search visible-xs"></div>
           <div class="header__basket">
             <div class="table-block">
               <div class="block-vertical">
@@ -122,11 +139,11 @@
                     <span class="middle">
                       <img src="img/basket.png" alt="">
                     </span>
-                    <span class="basket-name middle">
+                    <span class="basket-name middle hidden-xs">
                       Корзина
                     </span>
                   </div>
-                  <div class="basket-info">
+                  <div class="basket-info hidden-xs">
                     В корзине: нет товаров
                   </div>
                 </a>
@@ -134,7 +151,40 @@
             </div>
           </div>
         </div><!-- header info -->
-        <div class="catalog-menu clearfix">
+        <div class="mobile-nav visible-xs" id="mobile-nav">
+          <div class="mobile-nav__title">Каталог товаров</div>
+          <ul>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Мобильные телефоны</a></li>
+            <li><a href="#">Планшеты</a></li>
+            <li><a href="#">Аудио/видео</a></li>
+            <li><a href="#">Для авто</a></li>
+            <li><a href="#">Гаджеты</a></li>
+            <li><a href="#">Чехлы</a></li>
+            <li><a href="#">Аксессуары</a></li>
+          </ul>
+          <div class="mobile-nav__title">Магазин</div>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="mobile-telephone visible-xs clearfix">
+          <div class="col-xs-6">
+            <div class="mobile-telephone__text">8 (800) 123-5656</div>
+            <a href="#" class="get-call">
+              Обратный звонок
+            </a>
+          </div>
+          <div class="col-xs-6">
+            <div class="mobile-telephone__text">8 (800) 123-5656</div>
+            <span class="grey">c 9:00 до 22:00</span>
+          </div>
+        </div>
+        <div class="catalog-menu hidden-xs clearfix">
           <ul class="clearfix">
             <li>
               <a href="#" class="catalog-link">
@@ -295,16 +345,504 @@
         Apple iPhone 6 Plus 64GB Space Gray
       </h2>
       <div class="content clearfix">
-        <div class="content-wrapp product">
-          текст
+        <div class="content-wrapp product clearfix">
+          <div class="col-md-6 no-pad">
+            <div class="product__slider">
+              <ul class="bxslider" id="product-slider">
+                <li>
+                  <div class="product__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <img src="img/card.png" alt="">
+                        <a href="img/card.png" class="product__zoom fancybox" rel="gallery"></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <img src="img/card.png" alt="">
+                        <a href="img/card.png" class="product__zoom fancybox" rel="gallery"></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <img src="img/card.png" alt="">
+                        <a href="img/card.png" class="product__zoom fancybox" rel="gallery"></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="product__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <img src="img/card.png" alt="">
+                        <a href="img/card.png" class="product__zoom fancybox" rel="gallery"></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="product__btn">
+                <a href="#" class="product__btn_video middle">
+                  <span>Смотреть видео</span>
+                </a>
+                <a href="#" class="product__btn_3d middle">
+                  <span>Смотреть 3D</span>
+                </a>
+              </div>
+            </div>
+            <div class="product__thumb clearfix" id="product-thumb">
+              <a href="" data-slide-index="0" class="product__thumb_item">
+                <div class="table-block">
+                  <div class="block-vertical">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="" data-slide-index="1" class="product__thumb_item">
+                <div class="table-block">
+                  <div class="block-vertical">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="" data-slide-index="2" class="product__thumb_item">
+                <div class="table-block">
+                  <div class="block-vertical">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </div>
+                </div>
+              </a>
+              <a href="" data-slide-index="3" class="product__thumb_item">
+                <div class="table-block">
+                  <div class="block-vertical">
+                    <img src="http://placehold.it/60x60" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="product__descr">
+                <div class="product__descr_top clearfix">
+                  <div class="pull-left">
+                    <div class="product__status">
+                      <div>
+                        <span class="grey">Код товара :</span>
+                        <span>gfgfgf</span>
+                      </div>
+                      <div>
+                        <span class="grey">Наличие:</span>
+                        <span class="green">есть на складе</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="diagram-link middle"></a>
+                    <a href="#" class="share-link middle"></a>
+                  </div>
+                </div>
+                <div class="product__descr_link clearfix">
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <div class="product__price">
+                        65 790.-
+                      </div>
+                      <div class="product__prev-price">
+                        68 990.-
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <a href="#" class="product__buy-link">Купить</a>
+                      <div class="product__var-link clear">
+                        <a href="#">Купить в рассрочку</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <a href="#" class="product__click-link">Купить в 1 клик</a>
+                      <div class="product__var-link">
+                        <a href="#">Купить в кредит</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__label clearfix">
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <div class="product__label_item clearfix">
+                        <div class="product__label_img">
+                          <img src="img/p-label1.png" alt="">
+                        </div>
+                        <div class="product__label_text">
+                          Доставка<br> по Москве - 290Р
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <div class="product__label_item clearfix">
+                        <div class="product__label_img">
+                          <img src="img/p-label2.png" alt="">
+                        </div>
+                        <div class="product__label_text">
+                          Самовывоз <br>- бесплатно
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="row">
+                      <div class="product__label_item clearfix">
+                        <div class="product__label_img">
+                          <img src="img/p-label3.png" alt="">
+                        </div>
+                        <div class="product__label_text">
+                          Гарантия - от <br>производителя
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__par clearfix">
+                  <div class="col-md-5 col-sm-6">
+                    <div class="row">
+                      <div class="product__par_title">Оьем памяти:</div>
+                      <div class="memory"></div>
+                      <a href="#" class="memory__item middle active">64 Гб</a>
+                      <a href="#" class="memory__item middle">128 Гб</a>
+                      <a href="#" class="memory__item middle">256 Гб</a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-sm-6">
+                    <div class="row">
+                      <div class="product__par_title">Цвет:</div>
+                      <div class="product__colors">
+                        <div class="product__colors_item middle">
+                          <div class="product__colors_block active">
+                            <div class="product__colors_color" style="background: #000"></div>
+                          </div>
+                          <div class="product__colors_text">Черный</div>
+                        </div>
+                        <div class="product__colors_item middle">
+                          <div class="product__colors_block">
+                            <div class="product__colors_color" style="background: #b7b7b7"></div>
+                          </div>
+                          <div class="product__colors_text">Серый</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="product__par_title">Краткие характеристики:</div>
+                      <div class="product__small-par clearfix">
+                        <div class="col-md-5 col-sm-6">
+                          <div class="row">
+                            <ul>
+                              <li>2G, 3G,</li>
+                              <li>iOS 8.0</li>
+                              <li>Wi-Fi, Bluetooth, NFC</li>
+                              <li>Дисплей 5.5", 1080x1920 Pix</li>
+                            </ul>
+                            <a href="#">Все характеристики</a>
+                          </div>
+                        </div>
+                        <div class="col-md-7 col-sm-6">
+                          <div class="row">
+                            <ul>
+                              <li>2 Камеры: 8 Mpix и 1.2 Mpix</li>
+                              <li>128 ГБ</li>
+                              <li>GPS, ГЛОНАСС</li>
+                              <li>Поддержка VoLTE</li>
+                            </ul>
+                            <a href="#">Инструкция(pdf)</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- product block -->
+        <div class="content-wrapp product no-bg clearfix">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="product__info">
+                <ul class="nav-tab clearfix hidden-xs">
+                  <li>
+                    <a href="#" class="active" onclick="tab(info,'#product-descr'); return false;">Описание товара</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="tab(info,'#product-char'); return false;">Характеристики</a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="tab(info,'#product-review'); return false;">Оценки и отзывы</a>
+                  </li>
+                </ul>
+                <div class="tab-select visible">
+                  <div class="select">
+                    <a href="javascript:void(0);" class="slct">
+                      <span class="slct__text">
+                        Описание товара
+                      </span>
+                    </a>
+                    <ul class="drop">
+                      <li onclick="tab(info,'#product-descr'); return false;">
+                        <span class="slct__text">
+                        Описание товара
+                      </span>
+                      </li>
+                      <li onclick="tab(info,'#product-char'); return false;">
+                        <span class="slct__text">
+                          Характеристики
+                        </span>
+                      </li>
+                      <li onclick="tab(info,'#product-review'); return false;">
+                        <span class="slct__text">Оценки и отзывы</span>
+                      </li>
+                    </ul>
+                    <input type="hidden" id="select">
+                  </div>
+                </div>
+                <div id="product-descr" class="tab-content" style="display: block">
+                  <h3 class="my-order-title">Описание товара</h3>
+                  <h5>
+                    <b>Iphone 6s Plus</b>
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis porro vero nesciunt voluptatem animi commodi, fugiat itaque quod et culpa. Quia harum consequatur sequi eligendi ut impedit suscipit pariatur iure officia, recusandae illum, animi modi reprehenderit natus, enim! Dolore laboriosam quia accusamus totam explicabo numquam reprehenderit asperiores voluptates necessitatibus pariatur.
+                  </p>
+                  <h5>
+                    <b>Основные характеристики:</b>
+                  </h5>
+                  <ul>
+                    <li>5,5-дюймовый дисплей Retina HD с разрешением 1920х1080 пикселей;</li>
+                    <li>3D Touch;</li>
+                    <li>Процессор A9 со встроенным сопроцессором движения M9;</li>
+                    <li>12-мегапиксельная камера iSight с технологией Focus Pixels, вспышкой True Tone Flash, функцией Live Photos и оптической стабилизацией изображения;</li>
+                  </ul>
+                  <a href="#" class="more-link">Читать полностью</a>
+                </div>
+                <div id="product-char" class="tab-content">
+                  <h3 class="my-order-title">Характеристики</h3>
+                  <div class="product-char__title">
+                    <h3>
+                      <b>Вес и размеры</b>
+                    </h3>
+                  </div>
+                  <table class="product-char__table">
+                    <tbody>
+                      <tr>
+                        <td class="grey">
+                          Высота
+                        </td>
+                        <td>
+                          305,7 мм (12 дюймов)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="grey">
+                          Ширина
+                        </td>
+                        <td>
+                          220,6 мм (8,68 дюйма)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="grey">
+                          Толщина
+                        </td>
+                        <td>
+                          6,9 мм (0,27 дюйма)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="grey">
+                          Вес
+                        </td>
+                        <td>
+                          723 г (1,59 фунта)
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="product-char__title">
+                    <h3>
+                      <b>Экран</b>
+                    </h3>
+                  </div>
+                  <table class="product-char__table">
+                    <tbody>
+                      <tr>
+                        <td class="grey">
+                          Тип экрана
+                        </td>
+                        <td>
+                          Retina
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="grey">
+                          Диагональ экрана
+                        </td>
+                        <td>
+                          12,9-дюймовый широкоформатный дисплей Multi-Touch со светодиодной подсветкой
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="grey">
+                          Разрешение экрана
+                        </td>
+                        <td>
+                          2732x2048 пикселей, 264 пикселя/дюйм
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="grey">
+                          Сенсорный экран
+                        </td>
+                        <td>
+                          Да
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" class="more-link">Все характеристики</a>
+                </div>
+                <div id="product-review" class="tab-content">
+                  <div class="product-review__header clearfix">
+                    <div class="pull-left">
+                      <h3 class="my-order-title">Оценки и отзывы</h3>
+                    </div>
+                    <div class="pull-left">
+                      <div class="product-review__star">
+                        <span class="middle">
+                          <img src="img/star.png" alt="">
+                        </span>
+                        <span class="product-review__star_text middle">оценок: 2 / отзывов нет</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-review__item">
+                    <div class="product-review__name">
+                      <span class="middle">
+                        <img src="img/star.png" alt="">
+                      </span>
+                      <span>Name</span>
+                    </div>
+                    <h5>
+                      <b>Достоинства:</b>
+                    </h5>
+                    <p>
+                      Технологии 3D Touch и Live Photos, корпус из алюминия серии 7000, процессор A9, усовершенствованные камеры, 5,5-дюймовый дисплей Retina HD и многое другое.
+                    </p>
+                    <h5>
+                      <b>Недостатки:</b>
+                    </h5>
+                    <p>
+                      Не нашел пока что
+                    </p>
+                    <h5>
+                      <b>Коментарий:</b>
+                    </h5>
+                    <p>
+                      Купил себе тот красивенький смартфончик, очень он меня радует, очень яркий, красивый, тонкий, все работает на 5
+                    </p>
+                    <div class="product-review__btn">
+                      <span class="middle">Полезный отзыв?</span>
+                      <a href="#" class="middle like">15</a>
+                      <a href="#" class="middle unlike">0</a>
+                    </div>
+                    <a href="#" class="more-link">Смотреть все отзывы(6)</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="product__acces">
+                <h3 class="my-order-title">Совместимые аксессуары</h3>
+                <div class="product__acces_item">
+                  <div class="product__acces_title">Аккумуляторы внешние <a href="#">19</a></div>
+                  <div class="product__acces_content clearfix">
+                    <div class="col-sm-4">
+                      <div class="product__acces_img">
+                        <a href="#">
+                          <img src="http://placehold.it/80x90" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="product__acces_name">Аккумулятор Alcatel PB40, Li-Ion, 1800 мАч, белый (портативный)</div>
+                      <div class="product__acces_price middle">5 900</div>
+                      <a href="#" class="product__acces_link middle">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__acces_item">
+                  <div class="product__acces_title">Аккумуляторы внешние <a href="#">19</a></div>
+                  <div class="product__acces_content clearfix">
+                    <div class="col-sm-4">
+                      <div class="product__acces_img">
+                        <a href="#">
+                          <img src="http://placehold.it/80x90" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="product__acces_name">Аккумулятор Alcatel PB40, Li-Ion, 1800 мАч, белый (портативный)</div>
+                      <div class="product__acces_price middle">5 900</div>
+                      <a href="#" class="product__acces_link middle">Купить</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__acces_item">
+                  <div class="product__acces_title">Аккумуляторы внешние <a href="#">19</a></div>
+                  <div class="product__acces_content clearfix">
+                    <div class="col-sm-4">
+                      <div class="product__acces_img">
+                        <a href="#">
+                          <img src="http://placehold.it/80x90" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="product__acces_name">Аккумулятор Alcatel PB40, Li-Ion, 1800 мАч, белый (портативный)</div>
+                      <div class="product__acces_price middle">5 900</div>
+                      <a href="#" class="product__acces_link middle">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="hits">
           <header class="hits__header clearfix">
             <h2 class="block-title">Похожие товары</h2>
           </header>
           <div class="hits__carousel">
             <div class="owl-carousel owl-theme">
-              <div class="item" style="width: 210px;">
+              <div class="item">
                 <div class="hits__item">
                   <div class="hits__title">
                     Apple iPhone 6 Plus 128GB Space Gray
@@ -337,7 +875,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item" style="width: 210px;">
+              <div class="item">
                 <div class="hits__item">
                   <div class="hits__title">
                     Apple iPhone 6 Plus 128GB Space Gray
@@ -370,7 +908,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item" style="width: 210px;">
+              <div class="item">
                 <div class="hits__item">
                   <div class="hits__title">
                     Apple iPhone 6 Plus 128GB Space Gray
@@ -403,7 +941,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item" style="width: 210px;">
+              <div class="item">
                 <div class="hits__item">
                   <div class="hits__title">
                     Apple iPhone 6 Plus 128GB Space Gray
@@ -436,7 +974,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item" style="width: 210px;">
+              <div class="item">
                 <div class="hits__item">
                   <div class="hits__title">
                     Apple iPhone 6 Plus 128GB Space Gray
@@ -469,7 +1007,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item" style="width: 210px;">
+              <div class="item">
                 <div class="hits__item">
                   <div class="hits__title">
                     Apple iPhone 6 Plus 128GB Space Gray
@@ -502,7 +1040,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item" style="width: 210px;">
+              <div class="item">
                 <div class="hits__item">
                   <div class="hits__title">
                     Apple iPhone 6 Plus 128GB Space Gray
@@ -535,7 +1073,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item" style="width: 210px;">
+              <div class="item">
                 <div class="hits__item">
                   <div class="hits__title">
                     Apple iPhone 6 Plus 128GB Space Gray
@@ -575,7 +1113,7 @@
         <div class="recently-viewed">
           <h2 class="block-title">Вы недавно смотрели</h2>
           <div class="recently-viewed__content clearfix">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="row">
                 <div class="recently-viewed__item">
                   <div class="recently-viewed__img">
@@ -602,7 +1140,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="row">
                 <div class="recently-viewed__item">
                   <div class="recently-viewed__img">
@@ -629,7 +1167,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="row">
                 <div class="recently-viewed__item">
                   <div class="recently-viewed__img">
@@ -656,7 +1194,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
               <div class="row">
                 <div class="recently-viewed__item">
                   <div class="recently-viewed__img">
@@ -707,11 +1245,43 @@
           <div class="footer__email">
             Е-mail: info@istore-apple.ru
           </div>
-          <div class="copyright">
+          <div class="copyright hidden-xs">
             © 1900-2016 ООО «Название» <br>Все цены указаны в рублях.
           </div>
         </div>
-        <div class="site-map">
+        <ul class="footer-nav visible-xs">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Оплата</a>
+          </li>
+          <li>
+            <a href="#">Гарантии</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Еще</a>
+            <ul>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="yandex-link visible-xs">
+          <a href="#">
+            <img src="img/yandex-link.png" alt="">
+          </a>
+        </div>
+        <div class="site-map hidden-xs">
           <h4 class="footer__title">
             Карта сайта
           </h4>
@@ -735,7 +1305,7 @@
             </a>
           </div>
         </div>
-        <div class="footer__info">
+        <div class="footer__info hidden-xs">
           <h4 class="footer__title">
             Информация
           </h4>
@@ -844,6 +1414,14 @@
               </div>
             </a>
           </div>
+          <div class="copyright visible-xs clearfix">
+            <div class="pull-left">
+              © 1900-2016 ООО «Название» <br>Все цены указаны в рублях
+            </div>
+            <div class="pull-right">
+              <img src="img/counter.jpg" alt="">
+            </div>
+          </div>  
           <div class="create-block">
             <span class="middle">Разработано в студии</span> 
             <a href="#" class="middle">
@@ -867,16 +1445,28 @@
       nav:true,
       responsive:{
           0:{
-              items:1
+              items:2,
+              dots: false
           },
           600:{
               items:3
           },
           1000:{
+              items:4
+          },
+          1200:{
+              items:5
+          },
+          1350:{
               items:6
           }
       }
     })
+    $('#product-slider').bxSlider({
+      pagerCustom: '.product__thumb',
+      mode: 'fade',
+      controls: false
+    });
   </script>
   </script>
 </body>

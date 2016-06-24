@@ -33,7 +33,16 @@
               </div>
             </div>
           </div>
-          <nav class="nav">
+          <div class="mobile-compare visible-xs">
+            <div class="table-block">
+              <div class="block-vertical">
+                <a href="#">
+                  <img src="img/compare.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav class="nav hidden-xs">
             <ul class="clearfix">
               <li><a href="#">О нас</a></li>
               <li><a href="#">Доставка</a></li>
@@ -56,11 +65,11 @@
                 <span class="enter__icon middle">
                   <img src="img/enter.png" alt="">
                 </span>
-                <a href="#" class="middle">
+                <a href="#" class="middle hidden-xs">
                   Войти
                 </a>
-                <span class="enter__delimiter middle">/</span>
-                <a href="#" class="middle">
+                <span class="enter__delimiter middle hidden-xs">/</span>
+                <a href="#" class="middle hidden-xs">
                   Регистрация
                 </a>
               </div>
@@ -68,20 +77,27 @@
           </div>
         </div><!-- top panel -->
         <div class="header__info">
+          <div class="toggle-menu visible-xs">
+            <div class="burger-icon"></div>
+          </div>
           <div class="logo">
             <div class="table-block">
               <div class="block-vertical">
                 <a href="#" class="logo__link middle">
-                  <img src="img/logo.png" alt="">
+                  <img class="hidden-xs" src="img/logo.png" alt="">
+                  <img class="visible-xs" src="img/mobile-logo.png" alt="">
                 </a>
-                <span class="logo__text middle">
+                <span class="logo__text middle hidden-xs">
                   Интернет гипермаркет<br> 
                   электроники
+                </span>
+                <span class="logo__text visible-xs">
+                  Интернет гипермаркет электроники
                 </span>
               </div>
             </div>
           </div>
-          <div class="header__tel">
+          <div class="header__tel hidden-xs">
             <div class="table-block">
               <div class="block-vertical">
                 <div class="tel-item">
@@ -101,7 +117,7 @@
               </div>
             </div>
           </div>
-          <div class="header__time">
+          <div class="header__time hidden-xs">
             <div class="table-block">
               <div class="block-vertical">
                 <div class="time-info">
@@ -114,6 +130,7 @@
               </div>
             </div>
           </div>
+          <div class="mobile-search visible-xs"></div>
           <div class="header__basket">
             <div class="table-block">
               <div class="block-vertical">
@@ -122,11 +139,11 @@
                     <span class="middle">
                       <img src="img/basket.png" alt="">
                     </span>
-                    <span class="basket-name middle">
+                    <span class="basket-name middle hidden-xs">
                       Корзина
                     </span>
                   </div>
-                  <div class="basket-info">
+                  <div class="basket-info hidden-xs">
                     В корзине: нет товаров
                   </div>
                 </a>
@@ -134,7 +151,40 @@
             </div>
           </div>
         </div><!-- header info -->
-        <div class="catalog-menu clearfix">
+        <div class="mobile-nav visible-xs" id="mobile-nav">
+          <div class="mobile-nav__title">Каталог товаров</div>
+          <ul>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Мобильные телефоны</a></li>
+            <li><a href="#">Планшеты</a></li>
+            <li><a href="#">Аудио/видео</a></li>
+            <li><a href="#">Для авто</a></li>
+            <li><a href="#">Гаджеты</a></li>
+            <li><a href="#">Чехлы</a></li>
+            <li><a href="#">Аксессуары</a></li>
+          </ul>
+          <div class="mobile-nav__title">Магазин</div>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="mobile-telephone visible-xs clearfix">
+          <div class="col-xs-6">
+            <div class="mobile-telephone__text">8 (800) 123-5656</div>
+            <a href="#" class="get-call">
+              Обратный звонок
+            </a>
+          </div>
+          <div class="col-xs-6">
+            <div class="mobile-telephone__text">8 (800) 123-5656</div>
+            <span class="grey">c 9:00 до 22:00</span>
+          </div>
+        </div>
+        <div class="catalog-menu hidden-xs clearfix">
           <ul class="clearfix">
             <li>
               <a href="#" class="catalog-link">
@@ -437,11 +487,43 @@
           <div class="footer__email">
             Е-mail: info@istore-apple.ru
           </div>
-          <div class="copyright">
+          <div class="copyright hidden-xs">
             © 1900-2016 ООО «Название» <br>Все цены указаны в рублях.
           </div>
         </div>
-        <div class="site-map">
+        <ul class="footer-nav visible-xs">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Оплата</a>
+          </li>
+          <li>
+            <a href="#">Гарантии</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+          <li>
+            <a href="#">Еще</a>
+            <ul>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="yandex-link visible-xs">
+          <a href="#">
+            <img src="img/yandex-link.png" alt="">
+          </a>
+        </div>
+        <div class="site-map hidden-xs">
           <h4 class="footer__title">
             Карта сайта
           </h4>
@@ -465,7 +547,7 @@
             </a>
           </div>
         </div>
-        <div class="footer__info">
+        <div class="footer__info hidden-xs">
           <h4 class="footer__title">
             Информация
           </h4>
@@ -574,6 +656,14 @@
               </div>
             </a>
           </div>
+          <div class="copyright visible-xs clearfix">
+            <div class="pull-left">
+              © 1900-2016 ООО «Название» <br>Все цены указаны в рублях
+            </div>
+            <div class="pull-right">
+              <img src="img/counter.jpg" alt="">
+            </div>
+          </div>  
           <div class="create-block">
             <span class="middle">Разработано в студии</span> 
             <a href="#" class="middle">
