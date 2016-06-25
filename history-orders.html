@@ -151,6 +151,14 @@
             </div>
           </div>
         </div><!-- header info -->
+        <div class="search-form" id="search-form">
+          <div class="search-form__item">
+            <form action="">
+              <input type="search" placeholder="Поиск по сайту" class="search-form__input">
+              <input type="submit" value="" class="search-form__submit">
+            </form>
+          </div>
+        </div>
         <div class="mobile-nav visible-xs" id="mobile-nav">
           <div class="mobile-nav__title">Каталог товаров</div>
           <ul>
@@ -344,7 +352,7 @@
       <h2 class="inner-title">Личный кабинет</h2>
       <div class="content clearfix">
         <div class="content-wrapp">
-          <ul class="nav-tab nav-tab_cabinet clearfix">
+          <ul class="nav-tab nav-tab_cabinet clearfix hidden-xs">
             <li>
               <a href="#" class="active" onclick="tab(profile,'#profile'); return false;">Мой профиль</a>
             </li>
@@ -352,6 +360,27 @@
               <a href="#" onclick="tab(profile,'#history-orders'); return false;">История заказов</a>
             </li>
           </ul>
+          <div class="tab-select visible-xs">
+            <div class="select">
+              <a href="javascript:void(0);" class="slct">
+                <span class="slct__text">
+                  Мой профиль
+                </span>
+              </a>
+              <ul class="drop">
+                <li onclick="tab(profile,'#profile'); return false;">
+                  <span class="slct__text">
+                    Мой профиль
+                  </span>
+                </li>
+                <li onclick="tab(profile,'#history-orders'); return false;">
+                  <span class="slct__text">
+                    История заказов
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="status-table" id="history-orders">
               <div class="status-table-block">
                 <table>

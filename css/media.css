@@ -9,6 +9,10 @@
     width: 195px; }
   .catalog__item {
     width: 20%; }
+  .profile__content {
+    width: 100%; }
+  .status-table {
+    width: 100%; }
   .content-text {
     width: 100%; }
   .delivery table tbody td {
@@ -53,6 +57,22 @@
   .top-panel {
     padding: 0 15px;
     font-size: 13px; }
+  .status-table table td:nth-child(2) {
+    width: 145px; }
+  .status-table table td:nth-child(4) {
+    width: 205px; }
+  .status-table table td:nth-child(3) {
+    width: 155px; }
+  .ordering {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 15px; }
+  .my-order {
+    float: none;
+    width: 100%; }
+  .status-table table {
+    width: 690px; }
   .collection__thumb a {
     width: 33.3%; }
   .catalog__item {
@@ -186,11 +206,69 @@
   .wrapper > .container {
     padding-left: 5px;
     padding-right: 5px; }
+  .ordering__content {
+    padding: 15px 10px; }
+  .toggle__price,
+  .toggle__name {
+    float: none; }
+  .info-block__text {
+    margin-bottom: 25px; }
+  .label-item__block {
+    margin-bottom: 0; }
+  .label-item__table {
+    margin-bottom: 15px; }
+  .label-item__block_text {
+    float: none;
+    width: 100%; }
+  .label-item__block_day {
+    float: none;
+    width: 100%; }
+  .title-item {
+    line-height: 18px;
+    line-height: 1.3; }
+  .review__top {
+    padding-left: 0; }
+  .review__img {
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px; }
+  .inner-payment-item {
+    padding-left: 50px; }
+  .inner-payment-icon {
+    left: 0; }
+  .left-input {
+    padding-right: 0;
+    margin-bottom: 15px; }
+  .after-order {
+    padding-left: 0; }
+  .radio + label {
+    font-size: 15px; }
+  .order-basket-block {
+    padding-left: 100px; }
+  .order-basket-block .order-img {
+    width: 100px; }
+  .info-gps .text {
+    display: inherit; }
+  .news__descr {
+    padding-top: 10px; }
+  .right-input {
+    padding-left: 0; }
+  .profile__content {
+    padding-top: 10px; }
   .toggle__header {
     padding-left: 10px;
     padding-right: 35px; }
   .toggle__content_text {
     padding: 15px; }
+  .profile .right-input {
+    padding-left: 0; }
+  .input-block {
+    padding-right: 0; }
+  .profile .left-input {
+    padding-right: 0;
+    margin-bottom: 15px; }
+  .profile__form {
+    padding-left: 0; }
   .content-wrapp {
     padding: 10px; }
   .middle-text {

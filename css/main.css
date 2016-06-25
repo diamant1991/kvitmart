@@ -1961,10 +1961,7 @@ img {
   .toggle__item {
     margin-bottom: 20px; }
   .toggle__header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 45px;
+    padding: 10px 45px 10px 20px;
     background: #f4f4f4;
     cursor: pointer;
     font-size: 16px;
@@ -2060,12 +2057,27 @@ img {
     background: #f4f4f4;
     margin-bottom: 10px;
     padding-left: 10px; }
+    .label-item__block_text {
+      float: left;
+      width: 40%; }
+    .label-item__block_day {
+      float: left;
+      width: 60%; }
 
 .label-icon {
   margin-right: 10px; }
 
+.service-icon {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 65px;
+  text-align: center; }
+
 .service-item {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 65px; }
   .service-item td {
     vertical-align: middle; }
     .service-item td:first-child {
@@ -3893,7 +3905,9 @@ img {
   cursor: pointer;
   width: 20%;
   border-right: 2px solid #dcdcdc;
-  background: url(../img/search.png) no-repeat 50%; }
+  background: url(../img/mobile-seach.png) no-repeat 50%; }
+  .mobile-search.active, .mobile-search:hover {
+    background: #662d91 url(../img/mobile-seach-active.png) no-repeat 50%; }
 
 .toggle-menu {
   float: left;
@@ -4159,3 +4173,30 @@ img {
 
 .contacts-block {
   margin-bottom: 10px; }
+
+.search-form {
+  display: none; }
+  .search-form__item {
+    position: relative; }
+  .search-form__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #662d91;
+    outline: 0;
+    height: 50px;
+    padding-left: 55px;
+    font-size: 13px;
+    font-family: "Roboto", Tahoma, sans-serif; }
+  .search-form__submit {
+    background: url(../img/mobile-seach.png) no-repeat;
+    width: 19px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 50%;
+    margin-top: -9.5px;
+    outline: 0;
+    border: 0;
+    cursor: pointer; }

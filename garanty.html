@@ -151,6 +151,14 @@
             </div>
           </div>
         </div><!-- header info -->
+        <div class="search-form" id="search-form">
+          <div class="search-form__item">
+            <form action="">
+              <input type="search" placeholder="Поиск по сайту" class="search-form__input">
+              <input type="submit" value="" class="search-form__submit">
+            </form>
+          </div>
+        </div>
         <div class="mobile-nav visible-xs" id="mobile-nav">
           <div class="mobile-nav__title">Каталог товаров</div>
           <ul>
@@ -372,85 +380,64 @@
                     Наша компания реализует исключительно новую и оригинальную технику, которая имеет заводскую гарантию от производителя сроком на 1(один) год и 14 дней на аксессуары. Вы всегда можете вернуть или обменять товар, купленный в нашем магазине (согласно перечню непродовольственных товаров). Обмен и возврат осуществляется в соответствии с <a href="#">Законом Российской Федерации о защите прав потребителей.</a>
                   </p>
                   <div class="label-item">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="label-item__block">
-                              <div class="table-block">
-                                <div class="block-vertical">
-                                  <span class="label-icon middle">
-                                    <img src="img/label1.png" alt="">
-                                  </span>
-                                  <span class="label-text middle">
-                                    Гарантийное обслуживание 
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="label-item__block">
-                              <div class="table-block">
-                                <div class="block-vertical">- 1 год.</div>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="label-item__block">
-                              <div class="table-block">
-                                <div class="block-vertical">
-                                  <span class="label-icon middle">
-                                    <img src="img/label2.png" alt="">
-                                  </span>
-                                  <span class="label-text middle">
-                                    Обмен и возврат товара
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="label-item__block">
-                              <div class="table-block">
-                                <div class="block-vertical">- 14 дней момента покупки</div>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="label-item__table clearfix">
+                      <div class="label-item__block label-item__block_text">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <span class="label-icon middle">
+                              <img src="img/label1.png" alt="">
+                            </span>
+                            <span class="label-text middle">
+                              Гарантийное обслуживание 
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="label-item__block label-item__block_day">
+                        <div class="table-block">
+                          <div class="block-vertical">- 1 год.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="label-item__table clearfix">
+                      <div class="label-item__block label-item__block_text">
+                        <div class="table-block">
+                          <div class="block-vertical">
+                            <span class="label-icon middle">
+                              <img src="img/label2.png" alt="">
+                            </span>
+                            <span class="label-text middle">
+                              Обмен и возврат товара
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="label-item__block label-item__block_day">
+                        <div class="table-block">
+                          <div class="block-vertical">- 14 дней момента покупки</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <p>
                     Большинство товаров относящихся к мобильной электронике проверяются на подлинность на сайте производителя по серийным номерам.  В связи с этим, перед покупкой любого устройства, наши сотрудники готовы продемонстрировать вам проверку приобретаемого вами устройства.
                   </p>
-                  <div class="service-item">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="service-icon">
-                              <img src="img/service-apple.jpg" alt="">
-                            </div>
-                          </td>
-                          <td>
-                            Проверка права на сервисное обслуживание продукции Apple: <a href="https://checkcoverage.apple.com/ru/ru">https://checkcoverage.apple.com/ru/ru</a> 
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="service-icon">
-                              <img src="img/service-samsung.jpg" alt="">
-                            </div>
-                          </td>
-                          <td>
-                            Проверка права на сервисное обслуживание продукции Samsung: <a href="http://www.samsung.com/ru/support/ewarranty/">http://www.samsung.com/ru/support/ewarranty/</a> 
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="service-item clearfix">
+                    <div class="service-icon">
+                      <img src="img/service-apple.jpg" alt="">
+                    </div>
+                    <div class="service-item__text">
+                      Проверка права на сервисное обслуживание продукции Apple: <a href="https://checkcoverage.apple.com/ru/ru">https://checkcoverage.apple.com/ru/ru</a> 
+                    </div>
+                  </div>
+                  <div class="service-item clearfix">
+                    <div class="service-icon">
+                      <img src="img/service-samsung.jpg" alt="">
+                    </div>
+                    <div class="service-item__text">
+                      Проверка права на сервисное обслуживание продукции Samsung: <a href="http://www.samsung.com/ru/support/ewarranty/">http://www.samsung.com/ru/support/ewarranty/</a>
+                    </div>
+                  </div>
                   </div>
                   <div class="info-block">
                     <div class="info-block__icon">
