@@ -341,7 +341,7 @@
           </li>
         </ul>
       </div>
-      <div class="catalog-slider">
+      <div class="catalog-slider hidden-xs">
         <ul class="bxslider" id="catalog-slider">
           <li>
             <img src="img/catalog-banner.jpg" alt="">
@@ -378,9 +378,30 @@
           </a>
         </div>
       </div>
+      <div class="modile-sorting-btn visible-xs clearfix">
+        <div class="mob-filter-btn">
+          <span>Фильтровать</span>
+        </div>
+        <div class="mob-sorting-btn">
+          <div class="select">
+            <a href="javascript:void(0);" class="slct">
+              <span>Сортировать по</span>
+            </a>
+            <ul class="drop">
+              <li>
+                <span>Цене</span>
+              </li>
+              <li>
+                <span>Названию</span>
+              </li>
+            </ul>
+            <input type="hidden" id="select">
+          </div>
+        </div>
+      </div>
       <div class="content white">
         <div class="catalog-wrapp">
-          <div class="sidebar-catalog-filter">
+          <div class="sidebar-catalog-filter" id="sidebar-filter">
             <div class="side-filter-block">
               <button class="filter-btn">Производители</button>
               <div class="filter-content">
@@ -465,9 +486,13 @@
                 Контент
               </div>
             </div>
+            <div class="side-filter-btn">
+              <a href="#" class="pick-up">Подобрать</a>
+              <a href="#" class="reset-filter">Сбросить фильтр</a>
+            </div>
           </div>
           <div class="catalog-center">
-            <div class="sorting clearfix">
+            <div class="sorting hidden-xs clearfix">
               <div class="pull-left">
                 <div class="find-result">
                   <span class="grey">Всего найдено</span>
@@ -495,12 +520,11 @@
                       <img src="img/caret.png" alt="">
                     </span>
                   </a>
-                  <a href="#" class="view view_column middle active" onclick="tab(catalog,'#catalog-column'); return false;"></a>
-                  <a href="#" class="view view_list middle" onclick="tab(catalog,'#catalog-list'); return false;"></a>
+                  <a href="#" class="view view_column middle active hidden-sm" onclick="tab(catalog,'#catalog-column'); return false;"></a>
+                  <a href="#" class="view view_list middle hidden-sm" onclick="tab(catalog,'#catalog-list'); return false;"></a>
                 </div>
               </div>
             </div><!-- sorting -->
-
             <div class="catalog clearfix" id="catalog-column">
               <div class="catalog__item">
                 <div class="hits__item">
@@ -1271,7 +1295,7 @@
                 <span class="middle">
                   <img src="img/prev-page.png" alt="">
                 </span> 
-                <span class="middle">Предыдущая</span>
+                <span class="middle hidden-md">Предыдущая</span>
               </a>
               <ul class="page-list clearfix">
                 <li class="active">
@@ -1284,15 +1308,15 @@
                   <a href="#">3</a>
                 </li>
                 <li>
-                  <a href="#">4</a>
+                  <a href="#" class="hidden-sm">4</a>
                 </li>
                 <li>
-                  <a href="#">5</a>
+                  <a href="#" class="hidden-sm">5</a>
                 </li>
                 <li>
-                  <a href="#">6</a>
+                  <a href="#" class="hidden-sm">6</a>
                 </li>
-                <li class="hidden-xs">
+                <li class="hidden-sm">
                   <a href="#">7</a>
                 </li>
                 <li><a href="#">...</a></li>
@@ -1300,13 +1324,13 @@
                   <a href="#">35</a>
                 </li>
               </ul>
-              <a href="#" class="next-page hidden-xs">
-                <span class="middle"> Следующая </span>
+              <a href="#" class="next-page">
+                <span class="middle hidden-md"> Следующая </span>
                 <span class="middle">
                   <img src="img/next-page.png" alt="">
                 </span>
               </a>
-              <div class="all-link">
+              <div class="all-link hidden-xs">
                 <a href="#">Показать все</a>
               </div>
             </div>
@@ -1316,7 +1340,7 @@
       <div class="recently-viewed">
         <h2 class="block-title">Вы недавно смотрели</h2>
         <div class="recently-viewed__content clearfix">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="row">
               <div class="recently-viewed__item">
                 <div class="recently-viewed__img">
@@ -1343,7 +1367,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="row">
               <div class="recently-viewed__item">
                 <div class="recently-viewed__img">
@@ -1370,7 +1394,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="row">
               <div class="recently-viewed__item">
                 <div class="recently-viewed__img">
@@ -1397,7 +1421,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6">
             <div class="row">
               <div class="recently-viewed__item">
                 <div class="recently-viewed__img">

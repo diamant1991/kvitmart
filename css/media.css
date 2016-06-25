@@ -7,12 +7,33 @@
 @media (max-width: 1199px) {
   .logo {
     width: 195px; }
+  .catalog__item {
+    width: 20%; }
+  .content-text {
+    width: 100%; }
+  .delivery table tbody td {
+    padding-left: 0; }
+  .send-info__content {
+    padding-right: 0; }
+  .delivery table td:nth-child(2) {
+    display: none; }
+  .delivery__content {
+    width: 100%; }
+  .delivery {
+    padding-right: 0; }
+  .catalog-center .catalog__item {
+    width: 33.3%; }
   .header__basket {
     width: 166px; }
   .advantages {
     padding-left: 15px; }
   .nav-tab_hits {
     font-size: 14px; }
+  .sorting .pull-left,
+  .sorting .pull-right {
+    width: 100%; }
+  .sorting .pull-left {
+    padding-bottom: 20px; }
   .site-map {
     width: 200px; }
   .about-company__procent .number {
@@ -24,12 +45,20 @@
   .about-company__procent .right-block {
     float: none;
     width: 100%;
-    height: auto; } }
+    height: auto; }
+  .hidden-md {
+    display: none !important; } }
 
 @media (max-width: 991px) {
   .top-panel {
     padding: 0 15px;
     font-size: 13px; }
+  .collection__thumb a {
+    width: 33.3%; }
+  .catalog__item {
+    width: 33.3%; }
+  .catalog-center .catalog__item {
+    width: 50%; }
   .about-company__header {
     text-align: center; }
     .about-company__header p {
@@ -157,14 +186,48 @@
   .wrapper > .container {
     padding-left: 5px;
     padding-right: 5px; }
+  .toggle__header {
+    padding-left: 10px;
+    padding-right: 35px; }
+  .toggle__content_text {
+    padding: 15px; }
+  .content-wrapp {
+    padding: 10px; }
+  .middle-text {
+    font-size: 18px; }
+  .large-text {
+    font-size: 22px; }
+  .contacts-item {
+    margin-bottom: 0; }
+  .map {
+    margin-bottom: 10px; }
+  .catalog__item {
+    width: 50%; }
   .hidden-xs {
     display: none !important; }
   .info-delivery__title,
   .info-company__title {
     font-size: 22px; }
+  .pagination_cat {
+    width: 100%; }
+  .more-catalog {
+    height: 150px; }
+  .catalog-center .catalog__item_more {
+    clear: both;
+    width: 100%; }
+  .catalog-filter__list a {
+    margin: 2px; }
+  .catalog-filter {
+    padding: 10px; }
+  .catalog-wrapp {
+    padding-left: 0; }
   .info-company__text:before {
     right: 0;
     top: 0; }
+  .sidebar-catalog-filter {
+    position: static;
+    width: 100%;
+    display: none; }
   .col-md-6.no-pad {
     padding-left: 0;
     padding-right: 0; }
@@ -311,7 +374,8 @@
   .selection__item {
     padding-left: 0; }
   .block-title {
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 1.3; }
   .review__content {
     margin-left: 0; }
   .review__item {
