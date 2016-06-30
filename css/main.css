@@ -1325,7 +1325,8 @@ body {
     float: left;
     width: 82.5%; }
   .catalog-menu__icon {
-    height: 45px; }
+    height: 45px;
+    margin: auto; }
   .catalog-menu__text {
     text-transform: uppercase;
     color: #333;
@@ -1336,10 +1337,66 @@ body {
     width: 12.5%;
     border-right: 2px solid #dcdcdc; }
 
+.apple-icon {
+  background: url(../img/apple.png) no-repeat;
+  width: 25px; }
+
+.tel-icon {
+  background: url(../img/telephone.png) no-repeat;
+  width: 21px; }
+
+.tablet-icon {
+  background: url(../img/tablet.png) no-repeat;
+  width: 28px; }
+
+.audio-icon {
+  background: url(../img/audio.png) no-repeat;
+  width: 36px; }
+
+.auto-icon {
+  background: url(../img/auto.png) no-repeat;
+  width: 36px; }
+
+.gadjet-icon {
+  background: url(../img/gadjet.png) no-repeat;
+  width: 26px; }
+
+.flash-icon {
+  background: url(../img/flash.png) no-repeat;
+  width: 31px; }
+
+.search-icon {
+  background: url(../img/search.png) no-repeat 50%; }
+
+.compare-icon {
+  background: url(../img/compare.png) no-repeat 50%; }
+
 .catalog-link {
   height: 80px;
   display: block;
   text-align: center; }
+  .catalog-link:hover {
+    background: #662d91; }
+    .catalog-link:hover .catalog-menu__text {
+      color: #fff; }
+    .catalog-link:hover .apple-icon {
+      background: url(../img/apple-active.png) no-repeat; }
+    .catalog-link:hover .tel-icon {
+      background: url(../img/telephone-active.png) no-repeat; }
+    .catalog-link:hover .tablet-icon {
+      background: url(../img/tablet-active.png) no-repeat; }
+    .catalog-link:hover .audio-icon {
+      background: url(../img/audio-active.png) no-repeat; }
+    .catalog-link:hover .auto-icon {
+      background: url(../img/auto-active.png) no-repeat; }
+    .catalog-link:hover .gadjet-icon {
+      background: url(../img/gadjet-active.png) no-repeat; }
+    .catalog-link:hover .flash-icon {
+      background: url(../img/flash-active.png) no-repeat; }
+    .catalog-link:hover.search-icon {
+      background: #662d91 url(../img/search-active.png) no-repeat 50%; }
+    .catalog-link:hover.compare-icon {
+      background: #662d91 url(../img/compare-active.png) no-repeat 50%; }
 
 .catalog-btn {
   float: left;
@@ -1591,9 +1648,14 @@ img {
   color: #662d91;
   margin-bottom: 10px; }
 
+.partnership-item {
+  margin-bottom: 50px; }
+
 .block-header {
   position: relative;
   margin-bottom: 30px; }
+  .block-header.non-border:after {
+    content: none; }
   .block-header.non-mrg {
     margin-bottom: 0; }
     .block-header.non-mrg:after {
@@ -4157,6 +4219,18 @@ img {
   font-size: 13.5px;
   margin-bottom: 10px; }
 
+.clear-cat {
+  width: 100%;
+  display: block;
+  height: 40px;
+  line-height: 38px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #662d91;
+  text-align: center;
+  font-size: 13.5px;
+  margin-bottom: 10px; }
+
 .reset-filter {
   width: 100%;
   display: block;
@@ -4200,3 +4274,9 @@ img {
     outline: 0;
     border: 0;
     cursor: pointer; }
+
+.compare {
+  background: #fff; }
+  .compare__sidebar {
+    width: 210px;
+    padding: 20px; }
