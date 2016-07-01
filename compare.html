@@ -21,7 +21,7 @@
           <div class="city">
             <div class="table-block">
               <div class="block-vertical">
-                <a href="#">
+                <a href="#" class="other-modal-link">
                   <span class="city__icon middle">
                     <img src="img/gps.png" alt="">
                   </span>
@@ -30,6 +30,42 @@
                     <img src="img/caret.png" alt="">
                   </span>
                 </a>
+                <div class="city-modal other-modal">
+                  <div class="modal__dialog modal__dialog_city" role="document">
+                    <div class="modal__content">
+                      <div class="modal__header">
+                        <button type="button" class="modal__close modal__close_other" data-dismiss="modal" aria-label="Close">
+                          <img src="img/modal-close.png" alt="">
+                        </button>
+                        <h4 class="modal__title">Выбрать город</h4>
+                      </div>
+                      <div class="modal__body">
+                        <div class="modal__input">
+                          <div class="city-modal__label">Введите название Города:</div>
+                          <div class="city-modal__field clearfix">
+                            <form action="">
+                              <input type="text" class="input__item input__item_city" placeholder="Например, Оренбург">
+                              <input type="submit" class="city-modal__submit" value="Сохранить">
+                            </form>
+                          </div>
+                        </div>
+                        <div class="city-modal__list">
+                          <div class="city-modal__title">Популярные Города (регионы):</div>
+                          <ul class="clearfix">
+                            <li><a href="#">Москва (Московская область)</a></li>
+                            <li><a href="#">Муром (Владимирская область)</a></li>
+                            <li><a href="#">Мышкин (Ярославская область)</a></li>
+                            <li><a href="#">Нижний Новгород (Нижегородская область)</a></li>
+                            <li><a href="#">Новосибирск (Новосибирская область)</a></li>
+                            <li><a href="#">Омск (Омская область)</a></li>
+                            <li><a href="#">Орёл (Орловская область)</a></li>
+                            <li><a href="#">Пенза (Пензенская область)</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -134,7 +170,7 @@
           <div class="header__basket">
             <div class="table-block">
               <div class="block-vertical">
-                <a href="#">
+                <a href="#" class="other-modal-link">
                   <div class="basket-item">
                     <span class="middle">
                       <img src="img/basket.png" alt="">
@@ -147,6 +183,84 @@
                     В корзине: нет товаров
                   </div>
                 </a>
+                <div class="basket-modal other-modal">
+                  <div class="modal__dialog modal__dialog_basket" role="document">
+                    <div class="modal__content">
+                      <div class="modal__header">
+                        <button type="button" class="modal__close modal__close_other" data-dismiss="modal" aria-label="Close">
+                          <img src="img/modal-close.png" alt="">
+                        </button>
+                        <h4 class="modal__title">Ваш заказ</h4>
+                      </div>
+                      <div class="modal__body">
+                        <div class="my-order-info">
+                          В корзине <a href="#">2 товара</a> на сумму 24590 руб.
+                        </div>
+                        <div class="order-basket-block">
+                          <a href="#" class="del-order">
+                            <span class="del-order__text">удалить</span>
+                            <span>
+                              <img src="img/del-order.png" alt="">
+                            </span>
+                          </a>
+                          <div class="order-img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="http://placehold.it/70x70" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="order-desc">
+                            <div class="text">
+                              <p>Корпус для Sony Xperia C ORIGINAL с боковыми клавишами</p>
+                            </div>
+                            <div class="price">
+                              <p>24 590</p>
+                            </div>
+                            <div class="info-item info-item_abs">
+                              <p><span class="grey">Код товара:</span> вавпв787</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="order-basket-block">
+                          <a href="#" class="del-order">
+                            <span class="del-order__text">удалить</span>
+                            <span>
+                              <img src="img/del-order.png" alt="">
+                            </span>
+                          </a>
+                          <div class="order-img">
+                            <div class="table-block">
+                              <div class="block-vertical">
+                                <a href="#">
+                                  <img src="http://placehold.it/70x70" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="order-desc">
+                            <div class="text">
+                              <p>Корпус для Sony Xperia C ORIGINAL с боковыми клавишами</p>
+                            </div>
+                            <div class="price">
+                              <p>24 590</p>
+                            </div>
+                            <div class="info-item info-item_abs">
+                              <p><span class="grey">Код товара:</span> еfdf5545</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal__order clearfix">
+                          <div class="modal__right-block clearfix">
+                            <a href="#" class="modal-basket-link">Перейти к оформлению</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -327,8 +441,24 @@
       <div class="content clearfix">
         <div class="compare">
           <div class="compare__sidebar">
-            <a href="#" class="pick-up">Категория</a>
-            <a href="#" class="clear-cat">Очистить категорию</a>
+            <div class="compare__sidebar_header">
+              <a href="#" class="pick-up">Категория</a>
+              <a href="#" class="clear-cat">Очистить категорию</a>
+              <ul class="check-list">
+                <li>
+                  <input type="radio" class="radio-btn" id="radio1" name="param">
+                  <label for="radio1">Все параметры</label>
+                </li>
+                <li>
+                  <input type="radio" class="radio-btn" id="radio2" name="param">
+                  <label for="radio2">Различающиеся</label>
+                </li>
+                <li>
+                  <input type="radio" class="radio-btn" id="radio3" name="param">
+                  <label for="radio3">Одинаковые</label>
+                </li>
+              </ul>
+            </div>
             <div class="compare__title">
               <div class="table-block">
                 <div class="block-vertical">Тип устройства</div>
@@ -359,7 +489,11 @@
                 <div class="block-vertical">Модель процессора</div>
               </div>
             </div>
-            <div class="compare__title">Экран</div>
+            <div class="compare__title">
+              <div class="table-block">
+                <div class="block-vertical">Экран</div>
+              </div>
+            </div>
             <div class="compare__block grey">
               <div class="table-block">
                 <div class="block-vertical">Тип экрана</div>
@@ -371,6 +505,551 @@
               </div>
             </div>
           </div>
+          <!-- compare sidebar -->
+          <div class="compare__content">
+            <div class="compare__wrapp clearfix">
+              <div class="compare__item">
+                <a href="#" class="del-compare">
+                  <img src="img/del-compare.png" alt="">
+                </a>
+                <div class="compare__header">
+                  <div class="hits__title">
+                    Apple iPhone 6 Plus 128GB Space Gray
+                  </div>
+                  <div class="compare__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <a href="#">
+                          <img src="http://placehold.it/150x150" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hits__descr">
+                    <div class="hits__info clearfix">
+                      <div class="hits__price">
+                        <div class="today-price">
+                          63 790.-
+                        </div>
+                        <div class="prev-price">
+                          74190.-
+                        </div>
+                      </div>
+                      <a href="#" class="hits__buy">
+                        Купить
+                      </a>
+                    </div>
+                    <div class="hits__status">
+                      <span>Наличие:</span>
+                      есть на складе
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">трансформер</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Microsoft</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Intel</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Caleron 2840</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Глянцевый</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">11.6</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__item">
+                <a href="#" class="del-compare">
+                  <img src="img/del-compare.png" alt="">
+                </a>
+                <div class="compare__header">
+                  <div class="hits__title">
+                    Apple iPhone 6 Plus 128GB Space Gray
+                  </div>
+                  <div class="compare__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <a href="#">
+                          <img src="http://placehold.it/150x150" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hits__descr">
+                    <div class="hits__info clearfix">
+                      <div class="hits__price">
+                        <div class="today-price">
+                          63 790.-
+                        </div>
+                        <div class="prev-price">
+                          74190.-
+                        </div>
+                      </div>
+                      <a href="#" class="hits__buy">
+                        Купить
+                      </a>
+                    </div>
+                    <div class="hits__status">
+                      <span>Наличие:</span>
+                      есть на складе
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">трансформер</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Microsoft</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Intel</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Caleron 2840</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Глянцевый</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">11.6</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__item">
+                <a href="#" class="del-compare">
+                  <img src="img/del-compare.png" alt="">
+                </a>
+                <div class="compare__header">
+                  <div class="hits__title">
+                    Apple iPhone 6 Plus 128GB Space Gray
+                  </div>
+                  <div class="compare__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <a href="#">
+                          <img src="http://placehold.it/150x150" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hits__descr">
+                    <div class="hits__info clearfix">
+                      <div class="hits__price">
+                        <div class="today-price">
+                          63 790.-
+                        </div>
+                        <div class="prev-price">
+                          74190.-
+                        </div>
+                      </div>
+                      <a href="#" class="hits__buy">
+                        Купить
+                      </a>
+                    </div>
+                    <div class="hits__status">
+                      <span>Наличие:</span>
+                      есть на складе
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">трансформер</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Microsoft</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Intel</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Caleron 2840</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Глянцевый</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">11.6</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__item">
+                <a href="#" class="del-compare">
+                  <img src="img/del-compare.png" alt="">
+                </a>
+                <div class="compare__header">
+                  <div class="hits__title">
+                    Apple iPhone 6 Plus 128GB Space Gray
+                  </div>
+                  <div class="compare__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <a href="#">
+                          <img src="http://placehold.it/150x150" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hits__descr">
+                    <div class="hits__info clearfix">
+                      <div class="hits__price">
+                        <div class="today-price">
+                          63 790.-
+                        </div>
+                        <div class="prev-price">
+                          74190.-
+                        </div>
+                      </div>
+                      <a href="#" class="hits__buy">
+                        Купить
+                      </a>
+                    </div>
+                    <div class="hits__status">
+                      <span>Наличие:</span>
+                      есть на складе
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">трансформер</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Microsoft</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Intel</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Caleron 2840</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Глянцевый</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">11.6</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__item">
+                <a href="#" class="del-compare">
+                  <img src="img/del-compare.png" alt="">
+                </a>
+                <div class="compare__header">
+                  <div class="hits__title">
+                    Apple iPhone 6 Plus 128GB Space Gray
+                  </div>
+                  <div class="compare__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <a href="#">
+                          <img src="http://placehold.it/150x150" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hits__descr">
+                    <div class="hits__info clearfix">
+                      <div class="hits__price">
+                        <div class="today-price">
+                          63 790.-
+                        </div>
+                        <div class="prev-price">
+                          74190.-
+                        </div>
+                      </div>
+                      <a href="#" class="hits__buy">
+                        Купить
+                      </a>
+                    </div>
+                    <div class="hits__status">
+                      <span>Наличие:</span>
+                      есть на складе
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">трансформер</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Microsoft</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Intel</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Caleron 2840</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Глянцевый</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">11.6</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__item">
+                <a href="#" class="del-compare">
+                  <img src="img/del-compare.png" alt="">
+                </a>
+                <div class="compare__header">
+                  <div class="hits__title">
+                    Apple iPhone 6 Plus 128GB Space Gray
+                  </div>
+                  <div class="compare__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <a href="#">
+                          <img src="http://placehold.it/150x150" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hits__descr">
+                    <div class="hits__info clearfix">
+                      <div class="hits__price">
+                        <div class="today-price">
+                          63 790.-
+                        </div>
+                        <div class="prev-price">
+                          74190.-
+                        </div>
+                      </div>
+                      <a href="#" class="hits__buy">
+                        Купить
+                      </a>
+                    </div>
+                    <div class="hits__status">
+                      <span>Наличие:</span>
+                      есть на складе
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">трансформер</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Microsoft</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Intel</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Caleron 2840</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Глянцевый</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">11.6</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__item">
+                <a href="#" class="del-compare">
+                  <img src="img/del-compare.png" alt="">
+                </a>
+                <div class="compare__header">
+                  <div class="hits__title">
+                    Apple iPhone 6 Plus 128GB Space Gray
+                  </div>
+                  <div class="compare__img">
+                    <div class="table-block">
+                      <div class="block-vertical">
+                        <a href="#">
+                          <img src="http://placehold.it/150x150" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hits__descr">
+                    <div class="hits__info clearfix">
+                      <div class="hits__price">
+                        <div class="today-price">
+                          63 790.-
+                        </div>
+                        <div class="prev-price">
+                          74190.-
+                        </div>
+                      </div>
+                      <a href="#" class="hits__buy">
+                        Купить
+                      </a>
+                    </div>
+                    <div class="hits__status">
+                      <span>Наличие:</span>
+                      есть на складе
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">трансформер</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Microsoft</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Intel</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Caleron 2840</div>
+                  </div>
+                </div>
+                <div class="compare__title">
+                  
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">Глянцевый</div>
+                  </div>
+                </div>
+                <div class="compare__block">
+                  <div class="table-block">
+                    <div class="block-vertical">11.6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- compare content -->
         </div>
       </div>
     </div>
@@ -582,5 +1261,11 @@
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(".compare__content").mCustomScrollbar({
+      axis:"x",
+      advanced:{autoExpandHorizontalScroll:true}
+    });
+  </script>
 </body>
 </html>
