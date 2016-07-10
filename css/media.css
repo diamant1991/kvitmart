@@ -57,8 +57,29 @@
   .top-panel {
     padding: 0 15px;
     font-size: 13px; }
+  .basket-table table td:nth-child(4),
+  .basket-table table td:nth-child(5),
+  .basket-table table td:nth-child(6) {
+    width: 15%; }
   .status-table table td:nth-child(2) {
     width: 145px; }
+  .promo-form {
+    margin-top: 10px;
+    padding-right: 0; }
+  .inner-title_card {
+    line-height: 1.1;
+    padding: 15px; }
+  .inner-title .pull-left {
+    width: 100%; }
+  .inner-title .pull-right {
+    width: 100%; }
+  .inner-title .product-star {
+    padding-top: 15px; }
+  .dropdown {
+    min-height: inherit; }
+  .menu-child {
+    width: 480px;
+    padding-left: 15px; }
   .status-table table td:nth-child(4) {
     width: 205px; }
   .status-table table td:nth-child(3) {
@@ -206,6 +227,68 @@
   .wrapper > .container {
     padding-left: 5px;
     padding-right: 5px; }
+  .total-basket .pull-left {
+    width: 100%; }
+  .error-info {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 7px; }
+  .get-order-info .input__item {
+    padding-right: 25px; }
+  .error-icon,
+  .ok-icon {
+    right: 5px; }
+  .promo-input,
+  .promo-submit {
+    width: 48%; }
+  .basket-table table,
+  .basket-table tr,
+  .basket-table td,
+  .basket-table tbody {
+    display: block; }
+  .basket-table tr:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both; }
+  .basket-table tr {
+    border-bottom: 5px solid #f2f2f2;
+    position: relative; }
+  .basket-table table .today-price {
+    float: none !important; }
+  .basket-table table .prev-price {
+    float: none !important; }
+  .basket-table table td {
+    width: 33.3%;
+    float: left;
+    border-bottom: 0; }
+    .basket-table table td:first-child {
+      float: left;
+      width: 30%;
+      text-align: center; }
+    .basket-table table td:nth-child(2) {
+      float: left;
+      width: 70%; }
+    .basket-table table td:nth-child(4) {
+      clear: both;
+      width: 33.3%; }
+    .basket-table table td:nth-child(5) {
+      width: 33.3%; }
+    .basket-table table td:nth-child(6) {
+      width: 33.3%; }
+    .basket-table table td:last-child {
+      position: absolute;
+      z-index: 2;
+      right: 2px;
+      top: 2px;
+      width: auto;
+      padding-top: 0; }
+  .total-basket-info {
+    padding-right: 0;
+    margin-bottom: 15px; }
+  .total-basket .pull-right {
+    width: 100%; }
   .ordering__content {
     padding: 15px 10px; }
   .toggle__price,
